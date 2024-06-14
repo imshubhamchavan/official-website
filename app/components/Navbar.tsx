@@ -27,6 +27,10 @@ export const navigationItems = [
     name: "Projects",
     href: "/projects",
   },
+  {
+    name: "Portfolio",
+    href: "/portfolio",
+  },
 ];
 
 export function Navbar() {
