@@ -8,17 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Shubhamzone",
   description: "Personal portfolio",
-  icons: {
-    icon: [
-      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
-      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
-    ],
-    apple: "/apple-touch-icon.png",
-    shortcut: "/favicon-32x32.png",
-    maskIcon: { href: "/safari-pinned-tab.svg", color: "#5bbad5" },
-  },
-  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -31,7 +20,6 @@ export default function RootLayout({
        <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
