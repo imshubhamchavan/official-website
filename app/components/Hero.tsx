@@ -6,11 +6,11 @@ export function Hero() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div className="col-span-1 lg:col-span-2 h-full bg-gray-100 min-h-[500px] lg:min-h-[300px] rounded-2xl p-8">
-        <h1 className="text-4xl lg:text-6xl font-medium">SHUBHAM CHAVAN</h1>
-        <h1 className="text-4xl lg:text-4xl text-blue-500 font-normal mt-3">
+        <h1 className="text-3xl sm:text-3xl lg:text-6xl font-medium">SHUBHAM CHAVAN</h1>
+        <h1 className="text-2xl sm:text-2xl lg:text-4xl text-blue-500 font-normal mt-3">
           Web Developer
         </h1>
-        <h1 className="text-4xl lg:text-2xl font-normal text-left text-muted-foreground mt-3 ">
+        <h1 className="text-1xl sm:text-1xl lg:text-2xl font-normal text-left text-muted-foreground mt-3 ">
           Hello! I am Shubham Chavan, a dedicated and innovative web developer
           based in INDIA. With a passion for creating seamless and efficient web
           applications, I specialize in delivering high-quality, user-friendly
