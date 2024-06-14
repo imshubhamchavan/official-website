@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This repository contains the code for my personal portfolio website, showcasing my projects, skills, and professional journey. The website is built using modern web development technologies to ensure high performance, scalability, and maintainability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 14:** React framework for server-rendered applications.
+- **Prisma:** ORM for database management.
+- **Supabase:** Backend as a service for database and authentication.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **TypeScript:** Strongly typed programming language for safer and more scalable code.
+- **Kinde:** Identity and access management solution.
+- **Sanity:** Headless CMS for content management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Dynamic Content Management:** Powered by Sanity, allowing easy updates to portfolio content.
+- **Authentication:** User authentication managed by Supabase and Kinde.
+- **Type Safety:** Utilizes TypeScript for enhanced type safety and development efficiency.
+- **Responsive Design:** Fully responsive design using Tailwind CSS, ensuring a seamless experience across all devices.
+- **Database Management:** Prisma ORM for managing the application's data layer with Supabase.
 
-## Learn More
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
+Shubham Chavan - [Your Email] - [Your LinkedIn] - [Your Twitter]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Project Link:** https://github.com/imshubhamchavan/official-website
