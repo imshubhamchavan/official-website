@@ -12,7 +12,7 @@ export function Hero() {
         </h1>
         <h1 className="text-1xl sm:text-1xl lg:text-2xl font-normal text-left text-muted-foreground mt-3 ">
           Hello! I am Shubham Chavan, a dedicated and innovative web developer
-          based in INDIA. With a passion for creating seamless and efficient web
+          based in INDIA 🇮🇳. With a passion for creating seamless and efficient web
           applications, I specialize in delivering high-quality, user-friendly
           solutions that meet the unique needs of my clients.
         </h1>
