@@ -11,6 +11,7 @@ import { Suspense } from "react";
 
 import { unstable_noStore as noStore } from "next/cache";
 import { GuestBookFormLoading, LoadingMessages } from "../components/LoadingState";
+import { Footer } from "../components/Footer";
 
 async function getGuestBrookEntry() {
   noStore();
@@ -54,6 +55,7 @@ export default function GuestbookPage() {
           </ul>
         </CardHeader>
       </Card>
+      <Footer/>
     </section>
   );
 }

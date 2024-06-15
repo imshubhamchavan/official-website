@@ -1,6 +1,7 @@
 import { client } from "../lib/sanity";
 import { ProjectsCard } from "../lib/interface";
 import Image from "next/image";
+import { Footer } from "../components/Footer";
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) {
@@ -63,6 +64,7 @@ export default async function ProjectsPage() {
           </a>
         ))}
       </div>
+      <Footer/>
         </section>
     );
 
