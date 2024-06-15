@@ -26,6 +26,6 @@ This repository contains the code for my personal portfolio website, showcasing 
 Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
-Shubham Chavan - [Your Email] - [Your LinkedIn] - [Your Twitter]
+Shubham Chavan - [iamshubhamchavan@gmail.com] - [Your LinkedIn] 
 
-**Project Link:** https://github.com/imshubhamchavan/official-website
+**Project Link:** [https://github.com/imshubhamchavan/official-website](https://shubhamzone.vercel.app/)
