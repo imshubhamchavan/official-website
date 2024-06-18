@@ -1,41 +1,83 @@
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import me from "../../public/me.jpg";
-import pdf from "../../public/pdf.svg";
+import me from "../../public/skills-img.png";
+
+// icons
+import html_icon from "../../public/skills/html-5-svgrepo-com.svg";
+import javascript from "../../public/skills/js-svgrepo-com.svg";
+import scss from "../../public/skills/scss-svgrepo-com.svg";
+import react_icon from "../../public/skills/react-svgrepo-com.svg";
+import nextjs from "../../public/skills/nextjs-fill-svgrepo-com.svg"; 
+import typescript from "../../public/skills/typescript-icon-svgrepo-com.svg";
+import nodejs from "../../public/skills/node-js-svgrepo-com.svg";
+import redux from "../../public/skills/redux-svgrepo-com.svg";
+import tailwindcss from "../../public/skills/tailwind-svgrepo-com.svg";
+import postgres from "../../public/skills/postgresql-svgrepo-com.svg";
+import prisma from "../../public/skills/prisma-svgrepo-com.svg";
+import firebase from "../../public/skills/firebase-svgrepo-com.svg";
+import graphql from "../../public/skills/graphql-svgrepo-com.svg";
+import jest from "../../public/skills/jest-snapshot-svgrepo-com.svg";
+import angular from "../../public/skills/angular-icon-svgrepo-com.svg";
+import css3 from "../../public/skills/css-3-svgrepo-com.svg";
+
+
+
+const icons = [
+  html_icon,
+  css3,
+  scss,
+  tailwindcss,
+  javascript,
+  react_icon,
+  redux,
+  nextjs,
+  angular,
+  typescript,
+  nodejs,
+  postgres,
+  prisma,
+  firebase,
+  graphql,
+  jest
+
+]
+
+
+
 
 export function AboutSection() {
   return (
     <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
-      <Card className="col-span-1 lg:col-span-2 border-none bg-gray-100 p-8">
-        <h1 className="text-4xl lg:text-5xl">
-        Passionate and versatile web developer with a love for creating innovative solutions.
+      <Card className="col-span-1 lg:col-span-2 border-none p-8">
+        <h1 className="text-4xl lg:text-5xl rubik-scribble-regular text-gray-500">
+          Skills and Technologies
         </h1>
-        <p className="mt-4 text-muted-foreground lg:text-lg">
-          I am a software engineer with a passion for creating efficient and
-          user-friendly web applications. With experience in developing scalable
-          and maintainable solutions using modern technologies and frameworks, I
-          am dedicated to crafting innovative and practical solutions that
-          address real-world challenges.
-        </p>
-        <a
-          href="https://drive.google.com/file/d/1wW_hcaUsufDO9x4Vih7rCeyhy7r7Rnn1/view?usp=drive_link"
-          className="relative inline-block text-lg group mt-5" rel="noopener noreferrer" target="_blank"
-        >
-          <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-            <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-            <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12  bg-red-500 group-hover:-rotate-180 ease"></span>
-            <span className="animate-bounce  relative">Resume &#8681;</span>
-          </span>
-          <span
-            className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
-            data-rounded="rounded-lg"
-          ></span>
-        </a>
+        <Card className=" border-none mt-12">
+          <CardContent className="flex flex-wrap gap-4">
+          {icons.map((item, index) => (
+              <Image key={index} src={item} alt="Icon" className="w-16 h-16" />
+            ))}
+          </CardContent>
+        </Card>
+        
+        <div className="relative inline-flex  group mt-14">
+          <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#adadad] via-[#ff6363] to-[#a6a6a6] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <a
+            href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing"
+            title="download resume"
+            className="relative inline-flex items-center justify-center px-5 py-2 text-lg font-bold text-white transition-all duration-200 bg-red-500 group-hover:bg-red-600 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+            role="button"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Resume&emsp;<span>&#8681;</span>
+          </a>
+        </div>
       </Card>
       <div className="col-span-1">
         <Image
           src={me}
-          alt="Jan marshal"
+          alt="shubham chavan"
           className="h-[500px] object-cover rounded-lg w-full"
         />
       </div>

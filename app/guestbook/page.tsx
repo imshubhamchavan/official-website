@@ -11,7 +11,7 @@ import { Suspense } from "react";
 
 import { unstable_noStore as noStore } from "next/cache";
 import { GuestBookFormLoading, LoadingMessages } from "../components/LoadingState";
-import { Footer } from "../components/Footer";
+
 
 async function getGuestBrookEntry() {
   noStore();
@@ -38,7 +38,7 @@ async function getGuestBrookEntry() {
 export default function GuestbookPage() {
   return (
     <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
-      <h1 className="text-4xl font-semibold lg:text-5xl pt-5">Guestbook</h1>
+      <h1 className="text-4xl font-semibold lg:text-5xl animate-slide-in pt-5 rubik">Guestbook</h1>
       <p className="leading-7 text-muted-foreground mt-2">Sign my Guestbook!</p>
 
       <Card className="mt-10">
@@ -55,7 +55,7 @@ export default function GuestbookPage() {
           </ul>
         </CardHeader>
       </Card>
-      <Footer/>
+     
     </section>
   );
 }

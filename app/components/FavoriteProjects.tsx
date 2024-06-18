@@ -23,7 +23,13 @@ export async function FavoriteProjects() {
 
   console.log(data);
   return (
-    <div className="py-10 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1">
+    <div >
+      <h2 className="text-1xl lg:text-3xl rubik-scribble-regular text-gray-500 mt-12 text-center">
+         Resent Projects
+        </h2>
+      
+    <div className="py-10 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 mt-8">
+      
       {data.map((item) => (
         <a
           href={item.link}
@@ -31,7 +37,10 @@ export async function FavoriteProjects() {
           className="group block"
           target="_blank"
         >
-          <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
+          <h2 className="font-normal text-1xl lg:text-2xl hover:underline rubik-scribble text-gray-600">
+             {item.title}
+            </h2>
+          <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative shadow-xl mt-3">
             <Image
               src={item.imageUrl}
               alt="Image Description"
@@ -40,16 +49,14 @@ export async function FavoriteProjects() {
             />
           </div>
           <div className="mt-4">
-            <h2 className="font-medium text-lg hover:underline">
-              {item.title}
-            </h2>
-            <p className="mt-1 text-muted-foreground line-clamp-3">
+           
+            <p className="mt-1 text-muted-foreground line-clamp-3 cinzel-about">
               {item.description}
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
               {item.tags.map((tagItem, index) => (
                 <span
-                  className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-2 ring-inset ring-primary/20"
+                  className="inline-flex source-code-pro font-semibold items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm text-primary ring-2 ring-inset ring-primary/20"
                   key={index}
                 >
                   {tagItem}
@@ -59,6 +66,6 @@ export async function FavoriteProjects() {
           </div>
         </a>
       ))}
-    </div>
+    </div></div>
   );
 }

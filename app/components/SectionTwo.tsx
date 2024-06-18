@@ -71,10 +71,10 @@ export function SectionTwo() {
         />
       </div>
       <div className="flex flex-col w-full col-span-1 lg:col-span-2 gap-4">
-        <Card className="bg-gray-100 border-none">
+        <Card className=" border-none shadow-lg">
           <CardHeader>
-            <CardTitle>Explore my stack</CardTitle>
-            <CardDescription>Check out the tools i use daily</CardDescription>
+            <CardTitle className="rubik-scribble-regular text-gray-700">Explore my stack</CardTitle>
+            <CardDescription className="rubik">Check out the tools i use daily</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-4">
           {icons.map((item, index) => (
@@ -86,13 +86,14 @@ export function SectionTwo() {
           {socialMedia.map((item) => (
             <Card
               key={item.id}
-              className="p-4 flex flex-col items-center sm:items-start bg-gray-100 border-none"
+              className="p-4 flex flex-col items-center sm:items-start  border-none shadow-lg"
             >
               <Image src={item.icon} alt="Icon" className="w-16 h-16" />
-              <h1 className="text-2xl font-medium pt-3">{item.name}</h1>
-              <p className="text-muted-foreground">{item.username}</p>
+             
+              <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">{item.name}</h1>
+              <p className="text-muted-foreground rubik">{item.username}</p>
               <Button className="mt-4" size="sm" asChild>
-                <a href={item.link}>Follow</a>
+              <a href={item.link}> Follow</a>
               </Button>
             </Card>
           ))}

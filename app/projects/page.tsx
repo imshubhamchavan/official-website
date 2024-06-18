@@ -1,7 +1,7 @@
 import { client } from "../lib/sanity";
 import { ProjectsCard } from "../lib/interface";
 import Image from "next/image";
-import { Footer } from "../components/Footer";
+
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) {
@@ -23,11 +23,11 @@ export default async function ProjectsPage() {
   const data:ProjectsCard[] = await getData();
     return(
         <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
-        <h1 className="text-4xl font-semibold lg:text-5xl pt-5">Projects</h1>
+        <h1 className="text-4xl font-semibold lg:text-5xl pt-5 animate-slide-in rubik">Projects</h1>
         <p className="leading-7 text-muted-foreground mt-2">
           Check out what projects I have created
         </p>
-        <div className="py-12 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1">
+        <div className="py-12 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 ">
         {data.map((item) => (
           <a
             href={item.link}
@@ -35,7 +35,7 @@ export default async function ProjectsPage() {
             className="group block"
             target="_blank"
           >
-            <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
+            <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative  shadow-xl">
               <Image
                 src={item.imageUrl}
                 alt="Image Description"
@@ -44,16 +44,16 @@ export default async function ProjectsPage() {
               />
             </div>
             <div className="mt-4">
-              <h2 className="font-medium text-lg hover:underline">
+              <h2 className="font-medium text-lg hover:underline rubik-scribble text-gray-800">
                 {item.title}
               </h2>
-              <p className="mt-1 text-muted-foreground line-clamp-3">
+              <p className="mt-1 text-muted-foreground line-clamp-3 cinzel-about">
                 {item.description}
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.tags.map((tagItem, index) => (
                   <span
-                    className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-2 ring-inset ring-primary/20"
+                    className="inline-flex source-code-pro font-semibold items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm  text-primary ring-2 ring-inset ring-primary/20"
                     key={index}
                   >
                     {tagItem}
@@ -64,7 +64,7 @@ export default async function ProjectsPage() {
           </a>
         ))}
       </div>
-      <Footer/>
+     
         </section>
     );
 

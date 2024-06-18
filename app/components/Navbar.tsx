@@ -1,6 +1,7 @@
 "use client";
 
-
+import logo from "../../public/logo1.png";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -36,12 +37,18 @@ export const navigationItems = [
 export function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="max-w-7xl mx-auto px-4 md:px-8 py-5 grid grid-cols-12">
+    <nav className="max-w-7xl mx-auto px-4 md:px-8 py-5  bg-white z-10 grid grid-cols-12">
       <div className="col-span-6 flex md:col-span-3">
         <Link href="/">
-          <h1 className="text-3xl font-semibold">
-            Shubham<span className="text-blue-500">zone</span>
-          </h1>
+        
+              <Image
+                src={logo} // Path to your logo image
+                alt="Logo"
+                width={200} // Adjust width according to your logo size
+                height={200} // Adjust height according to your logo size
+                className="h-15 w-40"
+              />
+            
         </Link>
       </div>
 
