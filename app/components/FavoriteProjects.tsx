@@ -47,7 +47,7 @@ export async function FavoriteProjects() {
               />
             </div>
             <div className="mt-4">
-              <p className="mt-1 text-muted-foreground line-clamp-3 cinzel-about">
+              <p className="mt-1 text-gray-200 line-clamp-3 cinzel-about">
                 {item.description}
               </p>
               <div className="mt-3 flex flex-wrap gap-2 ">

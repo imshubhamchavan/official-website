@@ -76,7 +76,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-
+        <meta name="google-site-verification" content="nt8Dh8KJgelsqisLmAV66gQwYzSEwUat2GCwXvJ2MKE" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
