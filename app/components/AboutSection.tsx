@@ -47,9 +47,10 @@ const icons = [
 
 export function AboutSection() {
   return (
+    <div>
     <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10  ">
       <Card className="col-span-1 lg:col-span-2 border-none p-8 bg-transparent" >
-        <h1 className="text-4xl lg:text-5xl rubik-scribble-regular text-gray-500">
+        <h1 className="text-2xl lg:text-4xl rubik-scribble-regular text-gray-500">
           Skills and Technologies
         </h1>
        
@@ -80,6 +81,10 @@ export function AboutSection() {
           className="h-[500px] object-cover rounded-lg w-full"
         />
       </div>
+    </div>
+    <h2 className="text-1xl lg:text-4xl rubik-scribble-regular text-gray-800  text-center mt-20">
+         Resent Projects
+        </h2>
     </div>
   );
 }

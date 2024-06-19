@@ -20,7 +20,7 @@ export function Footer() {
         ))}
       </ul> */}
 
-      <a className="rubik text-muted-foreground opacity-50 hover:opacity-100" href="https://github.com/imshubhamchavan/">
+      <a className="noto-sans-mono  text-muted-foreground opacity-50 hover:opacity-100" href="https://github.com/imshubhamchavan/">
       Copyright &copy; {currentYear} | Shubham Chavan
       </a>
     </footer>

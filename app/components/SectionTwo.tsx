@@ -88,7 +88,7 @@ export function SectionTwo() {
               key={item.id}
               className="p-4 flex flex-col items-center sm:items-start  border-none shadow-sm"
             >
-              <Image src={item.icon} alt="Icon" className="w-16 h-16 sm:w-8 sm:h-8" />
+              <Image src={item.icon} alt="Icon" className="w-16 h-16 sm:w-8 sm:h-8 md:block" />
              
               <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">{item.name}</h1>
               <p className="text-muted-foreground rubik">{item.username}</p>

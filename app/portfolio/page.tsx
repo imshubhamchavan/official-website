@@ -17,7 +17,7 @@ export default function Portfolio() {
             <h1 className="text-2xl lg:text-4xl rubik-scribble-regular text-gray-600 mb-4">
               About
             </h1>
-            <div className="lg:text-lg rubik">
+            <div className="lg:text-lg noto-sans-mono">
               <div className="mb-6">
                 <p className="animate-slide-in-right mt-12">
                   Shubham is a dedicated and innovative web developer based in
