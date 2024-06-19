@@ -47,19 +47,18 @@ const icons = [
 
 export function AboutSection() {
   return (
-    <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
-      <Card className="col-span-1 lg:col-span-2 border-none p-8">
+    <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10  ">
+      <Card className="col-span-1 lg:col-span-2 border-none p-8 bg-transparent" >
         <h1 className="text-4xl lg:text-5xl rubik-scribble-regular text-gray-500">
           Skills and Technologies
         </h1>
-        <Card className=" border-none mt-12">
-          <CardContent className="flex flex-wrap gap-4">
+       
+          <CardContent className="flex flex-wrap gap-6 mt-16">
           {icons.map((item, index) => (
               <Image key={index} src={item} alt="Icon" className="w-16 h-16" />
             ))}
           </CardContent>
-        </Card>
-        
+      
         <div className="relative inline-flex  group mt-14">
           <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#adadad] via-[#ff6363] to-[#a6a6a6] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
           <a
@@ -74,7 +73,7 @@ export function AboutSection() {
           </a>
         </div>
       </Card>
-      <div className="col-span-1">
+      <div className="col-span-1 hidden md:block">
         <Image
           src={me}
           alt="shubham chavan"

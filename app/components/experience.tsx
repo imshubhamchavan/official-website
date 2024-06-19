@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div className="max-w-3xl mx-auto p-6  text-gray-900">
+    <div className="max-w-3xl mx-auto p-6 text-white">
       <div className="mb-8">
         <h1 className="text-2xl sm:text-2xl lg:text-3xl font-bold rubik">Front-End Developer</h1>
         <h3 className=" text-muted-foreground  mb-6">xyz Company</h3>

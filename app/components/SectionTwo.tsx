@@ -63,15 +63,15 @@ const icons = [
 export function SectionTwo() {
   return (
     <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
-      <div className="w-full relative col-span-1">
+      <div className="w-full relative col-span-1 hidden md:block">
         <Image
           src={square}
           alt="square"
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-full object-cover rounded-2xl opacity-70"
         />
       </div>
       <div className="flex flex-col w-full col-span-1 lg:col-span-2 gap-4">
-        <Card className=" border-none shadow-lg">
+        <Card className=" border-none shadow-sm">
           <CardHeader>
             <CardTitle className="rubik-scribble-regular text-gray-700">Explore my stack</CardTitle>
             <CardDescription className="rubik">Check out the tools i use daily</CardDescription>
@@ -82,13 +82,13 @@ export function SectionTwo() {
             ))}
           </CardContent>
         </Card>
-        <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 w-full gap-4">
           {socialMedia.map((item) => (
             <Card
               key={item.id}
-              className="p-4 flex flex-col items-center sm:items-start  border-none shadow-lg"
+              className="p-4 flex flex-col items-center sm:items-start  border-none shadow-sm"
             >
-              <Image src={item.icon} alt="Icon" className="w-16 h-16" />
+              <Image src={item.icon} alt="Icon" className="w-16 h-16 sm:w-8 sm:h-8" />
              
               <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">{item.name}</h1>
               <p className="text-muted-foreground rubik">{item.username}</p>
