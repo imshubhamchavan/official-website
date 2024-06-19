@@ -67,7 +67,7 @@ export async function FavoriteProjects() {
       <div className="text-center">
         {" "}
         <Link href="/projects" passHref>
-        <Button  className="mb-10 text-white" variant="link">
+        <Button  className="mb-10 text-white" title="other projects" variant="link">
           {" "}
           See More
           <ChevronRightIcon className="h-4 w-4" />

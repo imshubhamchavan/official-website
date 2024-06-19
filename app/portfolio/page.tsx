@@ -5,8 +5,9 @@ import Experience from "../components/experience";
 export default function Portfolio() {
   return (
     <div>
+      <title>About|Shubham Chavan</title>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-14">
           <Image
             src={myimg}
             alt="shubham chavan"

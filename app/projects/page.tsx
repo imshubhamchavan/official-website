@@ -22,6 +22,7 @@ export default async function ProjectsPage() {
   const data: ProjectsCard[] = await getData();
   return (
     <div className="mt-20">
+      <title>Projects|Shubham Chavan</title>
       <section className="max-w-3xl w-full px-4 md:px-8 mx-auto">
       <h1 className="text-2xl lg:text-6xl rubik-scribble-regular text-gray-400 text-center">
         Projects

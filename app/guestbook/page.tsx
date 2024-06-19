@@ -38,8 +38,9 @@ async function getGuestBrookEntry() {
 export default function GuestbookPage() {
   return (
     <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
+      <title>Guestbook|Shubham Chavan</title>
       <h1 className="text-4xl font-semibold lg:text-5xl animate-slide-in pt-5 rubik">Guestbook</h1>
-      <p className="leading-7 text-muted-foreground mt-2">Sign my Guestbook!</p>
+      <h1 className="leading-7 text-muted-foreground mt-2">Sign my Guestbook!</h1>
 
       <Card className="mt-10">
         <CardHeader className="flex flex-col w-full">

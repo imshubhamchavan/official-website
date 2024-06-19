@@ -10,6 +10,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { HomeIcon } from '@radix-ui/react-icons';
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,6 +20,7 @@ export const navigationItems = [
   {
     name: "Home",
     href: "/",
+    icon: HomeIcon,
   },
   {
     name: "Guestbook",
@@ -29,7 +31,7 @@ export const navigationItems = [
     href: "/projects",
   },
   {
-    name: "Portfolio",
+    name: "About",
     href: "/portfolio",
   },
 ];
@@ -60,8 +62,9 @@ export function Navbar() {
                 <Link href={item.href} legacyBehavior passHref>
                   <NavigationMenuLink
                     active={pathname === item.href}
-                    className={navigationMenuTriggerStyle()}
+                    className={navigationMenuTriggerStyle()} 
                   >
+                     {item.icon && <item.icon className="inline-block w-4 h-4 mr-2" />}
                     {item.name}
                   </NavigationMenuLink>
                 </Link>

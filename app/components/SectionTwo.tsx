@@ -77,7 +77,7 @@ export function SectionTwo() {
           </CardHeader>
           <CardContent className="flex flex-wrap gap-4">
             {icons.map((item, index) => (
-              <Image key={index} src={item} alt="Icon" className="w-16 h-16" />
+              <Image key={index} src={item} alt="Icon" className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16" />
             ))}
           </CardContent>
         </Card>
@@ -92,7 +92,7 @@ export function SectionTwo() {
               <Image
                 src={item.icon}
                 alt="Icon"
-                className="w-16 h-16 sm:w-8 sm:h-8 md:block"
+                className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16"
               />
               <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">
                 {item.name}
