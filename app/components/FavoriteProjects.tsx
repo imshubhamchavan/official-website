@@ -4,7 +4,7 @@ import { client } from "../lib/sanity";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import Hireme from "./Hireme"; 
+
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) [0...2] {
@@ -29,55 +29,63 @@ export async function FavoriteProjects() {
   return (
     <div>
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
-      <div className="py-10 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 mt-8">
-        {data.map((item) => (
-          <a
-            href={item.link}
-            key={item._id}
-            className="group block"
-            target="_blank"
-          >
-            <h2 className="font-normal text-1xl lg:text-2xl hover:underline rubik-scribble text-center text-gray-100">
-              {item.title}
-            </h2>
-            <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative shadow-md mt-3">
-              <Image
-                src={item.imageUrl}
-                alt="Image Description"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl p-12"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="mt-1 text-gray-200 line-clamp-3 cinzel-about">
-                {item.description}
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2 ">
-                {item.tags.map((tagItem, index) => (
-                  <span
-                    className="inline-flex source-code-pro font-semibold items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm text-white text-primary ring-2 ring-inset ring-primary/20"
-                    key={index}
-                  >
-                    {tagItem}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </a>
-        ))}
+    <div className="flex space-x-8 flex flex-col mb-24">
+        <h1 className="text-6xl lg:text-6xl rubik-scribble text-white ml-5 mt-28">
+          Resent Projects
+        </h1>
+        <div className="mt-8 w-2/3 lg:w-1/2 text-left">
+
+        <p className="noto-sans text-gray-300 ">Welcome! Take a moment to explore the diverse range of skills and technologies I utilize. From cutting-edge web technologies and frameworks to essential design tools and programming languages.</p>
+</div>
       </div>
+    <div className="py-12 grid md:grid-cols-2 gap-2 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 ">
+          {data.map((item) => (
+            <a
+              href={item.link}
+              key={item._id}
+              className="group block"
+              target="_blank"
+            >
+              <div className="aspect-w-12 aspect-h-8 overflow-hidden rounded-2xl relative  shadow-xl">
+                <Image
+                  src={item.imageUrl}
+                  alt="Image Description"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl"
+                />
+              </div>
+              <div className="mt-4">
+                <h2 className="font-medium text-lg hover:underline rubik-scribble text-gray-100 mt-8">
+                  {item.title}
+                </h2>
+                <p className="mt-1 text-gray-400 line-clamp-3 cinzel-about mb-6">
+                  {item.description}
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {item.tags.map((tagItem, index) => (
+                    <span
+                      className="inline-flex source-code-pro font-normal text-white ring-white items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm  text-primary ring-2 ring-inset ring-primary/20"
+                      key={index}
+                    >
+                      {tagItem}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       <div className="text-center">
         {" "}
         <Link href="/projects" passHref>
-        <Button  className="px-6 py-4 z-10 mt-10 rounded-full text-sm border-black hover:text-white hover:bg-black" title="other projects" variant="outline">
+        <Button  className="px-6 py-4 z-10 mt-10 rounded-full text-sm bg-black text-white border-white  hover:text-black hover:bg-white" title="other projects" variant="outline">
           {" "}
           See More
           <ChevronRightIcon className="h-4 w-4" />
         </Button></Link>
-        <h2 className="text-gray-500 font-normal mt-2">take a look at my other projects</h2>
+        <h2 className="text-gray-500 font-normal mt-6 mb-8">take a look at my other projects</h2>
       </div>
-    </div>{""}
-    <Hireme/>
+    </div>{"flex"}
     </div>
   );
 }

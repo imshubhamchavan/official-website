@@ -2,7 +2,7 @@ import Image from "next/image";
 import myimg from "../../public/me2.jpg";
 import Experience from "../components/experience";
 
-export default function Portfolio() {
+export default function About() {
   return (
     <div>
       <title>About|Shubham Chavan</title>
@@ -65,9 +65,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-        <h1 className=" text-center text-2xl lg:text-4xl rubik-scribble-regular text-gray-700 mb-4">
-          Professional Experience
-        </h1>
       <div className="w-full bg-black">
         <Experience />
       </div>

@@ -32,7 +32,7 @@ export const navigationItems = [
   },
   {
     name: "About",
-    href: "/portfolio",
+    href: "/about",
   },
 ];
 

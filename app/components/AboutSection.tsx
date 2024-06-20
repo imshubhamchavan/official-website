@@ -52,9 +52,9 @@ const icons = [
 
 export function AboutSection() {
   return (
-    <div className="  mt-32 font-thin">
+    <div className="  mt-32 font-thin mb-32">
       <div className="flex space-x-8 flex flex-col">
-        <h1 className="text-6xl lg:text-6xl rubik-scribble text-gray-800 ml-5">
+        <h1 className="text-1xl lg:text-6xl rubik-scribble text-gray-800 ml-5">
           Skills and Technologies
         </h1>
         <div className="mt-8 w-2/3 lg:w-1/2 text-left">
@@ -82,13 +82,17 @@ export function AboutSection() {
       passHref
     >
       <Button
-        variant="outline"
-        className="mb-10 flex font-bold hover:bg-red-600 hover:text-white items-center ml-auto bg-white text-red-600 rounded-full border-red-600 px-6 py-4 z-10"
-        rel="noopener noreferrer"
-        title="Download Resume"
-      >
-        Download Resume <DownloadIcon className="ml-2" />
-      </Button>
+  variant="outline"
+  className="relative overflow-hidden mb-10 flex font-bold items-center ml-auto bg-white text-red-600 rounded-full border-red-600 px-6 py-4 z-10 group"
+  rel="noopener noreferrer"
+  title="Download Resume"
+>
+  <span className="relative z-10 flex items-center">
+    Download Resume <DownloadIcon className="ml-2" />
+  </span>
+  <span className="absolute inset-0 bg-red-600 transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+</Button>
+
     </Link>
   </div>
 </Card>
@@ -101,9 +105,6 @@ export function AboutSection() {
           />
         </div>
       </div>
-      <h1 className="text-1xl lg:text-4xl rubik-scribble-regular text-gray-800  text-center mt-20">
-        Resent Projects
-      </h1>
     </div>
   );
 }
