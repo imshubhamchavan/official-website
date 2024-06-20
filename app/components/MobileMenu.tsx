@@ -25,7 +25,7 @@ export function MobileMenu() {
   return (
     <Sheet open={open} onOpenChange={(state) => setOpen(state)}>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" >
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>

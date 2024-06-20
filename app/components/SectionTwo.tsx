@@ -54,7 +54,7 @@ const socialMedia = [
 ];
 export function SectionTwo() {
   return (
-    <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10">
+    <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10 mb-10">
       <div className="w-full relative col-span-1 hidden md:block">
         <Image
           src={square}
@@ -67,43 +67,53 @@ export function SectionTwo() {
       <div className="flex flex-col w-full col-span-1 lg:col-span-2 gap-4">
         {/* Card section for technology stack */}
         <Card className="border-none shadow-sm">
-          <CardHeader>
-            <CardTitle className="rubik-scribble-regular text-gray-700">
-              Explore my stack
-            </CardTitle>
-            <CardDescription className="rubik">
-              Check out the tools I use daily
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="flex flex-wrap gap-4">
-            {icons.map((item, index) => (
-              <Image key={index} src={item} alt="Icon" className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16" />
-            ))}
-          </CardContent>
-        </Card>
+  <CardHeader>
+    <CardTitle className="rubik-scribble-regular text-gray-700">
+      Explore my stack
+    </CardTitle>
+    <CardDescription className="rubik">
+      Check out the tools I use daily
+    </CardDescription>
+  </CardHeader>
+  <CardContent className="flex flex-wrap gap-4">
+    {icons.map((item, index) => (
+      <div key={index} className="group relative">
+        <Image
+          src={item}
+          alt="Icon"
+          className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+        />
+      </div>
+    ))}
+  </CardContent>
+</Card>
+
 
          {/* Social media links */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {socialMedia.map((item) => (
-            <Card
-              key={item.id}
-              className="p-4 flex flex-col items-center sm:items-start border-none shadow-sm"
-            >
-              <Image
-                src={item.icon}
-                alt="Icon"
-                className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16"
-              />
-              <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">
-                {item.name}
-              </h1>
-              <p className="text-muted-foreground rubik">{item.username}</p>
-              <Button className="mt-4" size="sm" asChild>
-                <a href={item.link}  target="_blank" rel="noopener noreferrer"> Follow</a>
-              </Button>
-            </Card>
-          ))}
-        </div>
+         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+  {socialMedia.map((item) => (
+    <Card
+      key={item.id}
+      className="p-4 flex flex-col items-center sm:items-start border-none shadow-sm group"
+    >
+      <Image
+        src={item.icon}
+        alt="Icon"
+        className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+      />
+      <h1 className="text-2xl rubik-scribble font-medium text-gray-700 pt-3">
+        {item.name}
+      </h1>
+      <p className="text-muted-foreground rubik">{item.username}</p>
+      <Button className="mt-4" size="sm" asChild>
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          Follow
+        </a>
+      </Button>
+    </Card>
+  ))}
+</div>
+
       </div>
     </div>
   );

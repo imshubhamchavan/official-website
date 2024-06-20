@@ -24,10 +24,10 @@ export default async function ProjectsPage() {
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
       <section className="max-w-3xl w-full px-4 md:px-8 mx-auto">
-      <h1 className="text-2xl lg:text-6xl rubik-scribble-regular text-gray-400 text-center">
+      <h1 className="text-2xl lg:text-6xl rubik-scribble text-gray-800 text-center">
         Projects
       </h1>
-      <p className="text-1xl lg:text-1xl rubik mt-6 text-gray-700 mb-4 text-center">
+      <p className="text-1xl lg:text-1xl noto-sans text-gray-500  mt-6 mb-4 text-center">
         Explore my diverse range of projects showcasing my expertise in web
         development, including responsive design, dynamic web applications, and
         creative solutions. Each project highlights my skills in modern

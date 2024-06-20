@@ -52,35 +52,47 @@ const icons = [
 
 export function AboutSection() {
   return (
-    <div>
-      <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-10  ">
-        <Card className="col-span-1 lg:col-span-2 border-none p-8 bg-transparent">
-          <h1 className="text-2xl lg:text-4xl rubik-scribble-regular text-gray-500">
-            Skills and Technologies
-          </h1>
+    <div className="  mt-32 font-thin">
+      <div className="flex space-x-8 flex flex-col">
+        <h1 className="text-6xl lg:text-6xl rubik-scribble text-gray-800 ml-5">
+          Skills and Technologies
+        </h1>
+        <div className="mt-8 w-2/3 lg:w-1/2 text-left">
 
-          <CardContent className="flex flex-wrap gap-6 mt-16">
-            {icons.map((item, index) => (
-              <Image key={index} src={item} alt="Icon" className="w-16 h-16" />
-            ))}
-          </CardContent>
+        <p className="noto-sans text-gray-500 ">Welcome! Take a moment to explore the diverse range of skills and technologies I utilize. From cutting-edge web technologies and frameworks to essential design tools and programming languages.</p>
+</div>
+      </div>
+      <div className="grid gird-cols-1 lg:grid-cols-3 gap-4 mt-4 ">
+      <Card className="col-span-1 lg:col-span-2 border-none p-8 bg-transparent">
+  <CardContent className="flex flex-wrap gap-6 mt-16">
+    {icons.map((item, index) => (
+      <div key={index} className="group relative">
+        <Image
+          src={item}
+          alt="Icon"
+          className="w-16 h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+        />
+      </div>
+    ))}
+  </CardContent>
 
-          <div className="relative inline-flex  group mt-14 ">
-            <Link
-              href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing"
-              passHref
-            >
-              <Button
-                className="mb-10 flex items-center ml-auto bg-red-600 text-white font-semibold"
-                rel="noopener noreferrer"
-                title="Download Resume"
-              >
-                {" "}
-                Resume <DownloadIcon className="mr-2" />
-              </Button>
-            </Link>
-          </div>
-        </Card>
+  <div className="relative flex justify-center mt-24">
+    <Link
+      href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing"
+      passHref
+    >
+      <Button
+        variant="outline"
+        className="mb-10 flex font-bold hover:bg-red-600 hover:text-white items-center ml-auto bg-white text-red-600 rounded-full border-red-600 px-6 py-4 z-10"
+        rel="noopener noreferrer"
+        title="Download Resume"
+      >
+        Download Resume <DownloadIcon className="ml-2" />
+      </Button>
+    </Link>
+  </div>
+</Card>
+
         <div className="col-span-1 hidden md:block">
           <Image
             src={me}

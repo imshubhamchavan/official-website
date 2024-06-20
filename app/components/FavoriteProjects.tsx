@@ -4,6 +4,7 @@ import { client } from "../lib/sanity";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
+import Hireme from "./Hireme"; 
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) [0...2] {
@@ -26,7 +27,8 @@ export async function FavoriteProjects() {
 
   console.log(data);
   return (
-    <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8">
+    <div>
+    <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
       <div className="py-10 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 mt-8">
         {data.map((item) => (
           <a
@@ -67,12 +69,15 @@ export async function FavoriteProjects() {
       <div className="text-center">
         {" "}
         <Link href="/projects" passHref>
-        <Button  className="mb-10 text-white" title="other projects" variant="link">
+        <Button  className="px-6 py-4 z-10 mt-10 rounded-full text-sm border-black hover:text-white hover:bg-black" title="other projects" variant="outline">
           {" "}
           See More
           <ChevronRightIcon className="h-4 w-4" />
         </Button></Link>
+        <h2 className="text-gray-500 font-normal mt-2">take a look at my other projects</h2>
       </div>
+    </div>{""}
+    <Hireme/>
     </div>
   );
 }

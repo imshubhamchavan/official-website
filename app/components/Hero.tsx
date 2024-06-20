@@ -31,7 +31,7 @@ export function Hero() {
   });
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 ">
       <title>Shubham Chavan | Portfolio</title>
       <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-16">
         <h1 className="text-3xl text-bold rubik-scribble-regular text-gray-500 sm:text-3xl lg:text-7xl">
@@ -50,17 +50,14 @@ export function Hero() {
             <Cursor />
           </span>
         </h1>
-        <h1 className="text-1xl sm:text-1xl lg:text-2xl font-normal text-left  text-muted-foreground mt-3 ">
-          {/* information here */}
-        </h1>
       </div>
-
+      <div className="relative overflow-visible">
       <Image
         src={myimg}
         alt="shubham chavan"
         className="col-span-1 h-[550px] animate-slide-in-right object-cover rounded-2xl"
         priority
-      />
+      /></div>
     </div>
   );
 }

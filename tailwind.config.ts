@@ -19,6 +19,11 @@ const config = {
     },
     extend: {
       colors: {
+        fontSize: {
+          '10xl': '8rem',
+          '11xl': '9rem',
+          '12xl': '10rem',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
