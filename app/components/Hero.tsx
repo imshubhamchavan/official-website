@@ -34,7 +34,7 @@ export function Hero() {
     <div className="grid grid-cols-1 lg:grid-cols-3 ">
       <title>Shubham Chavan | Portfolio</title>
       <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-16">
-        <h1 className="text-1xl text-bold rubik-scribble-regular text-gray-500 sm:text-3xl lg:text-7xl">
+        <h1 className="text-6xl text-bold rubik-scribble-regular text-gray-500 sm:text-3xl lg:text-7xl">
           SHUBHAM CHAVAN
         </h1>{" "}
         <div className="text-center rubik-scribble-regular text-gray-300">

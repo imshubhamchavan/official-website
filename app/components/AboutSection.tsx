@@ -54,7 +54,7 @@ export function AboutSection() {
   return (
     <div className="  mt-32 font-thin mb-32">
       <div className="flex space-x-8 flex flex-col">
-        <h1 className="text-1xl lg:text-6xl rubik-scribble text-gray-800 ml-5">
+        <h1 className="text-6xl lg:text-6xl rubik-scribble text-gray-800 ml-5">
           Skills and Technologies
         </h1>
         <div className="mt-8 w-2/3 lg:w-1/2 text-left">
