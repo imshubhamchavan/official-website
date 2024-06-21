@@ -24,10 +24,10 @@ export default async function ProjectsPage() {
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
       <section className="max-w-3xl w-full px-4 md:px-8 mx-auto">
-      <h1 className="text-6xl lg:text-6xl rubik-scribble text-gray-800 text-center">
+      <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300 ml-5 mr-5 ">
         Projects
       </h1>
-      <p className="text-1xl lg:text-1xl noto-sans text-gray-500  mt-6 mb-4 text-center">
+      <p className="text-1xl lg:text-1xl noto-sans text-gray-500  mt-12 mb-4 text-center">
         Explore my diverse range of projects showcasing my expertise in web
         development, including responsive design, dynamic web applications, and
         creative solutions. Each project highlights my skills in modern
@@ -60,7 +60,7 @@ export default async function ProjectsPage() {
                 <div className="mt-3 flex flex-wrap gap-2">
                   {item.tags.map((tagItem, index) => (
                     <span
-                      className="inline-flex source-code-pro font-semibold items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm  text-primary ring-2 ring-inset ring-primary/20"
+                      className="inline-flex source-code-pro font-semibold items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs sm:text-sm  text-gray-600 ring-2 ring-outline ring-white"
                       key={index}
                     >
                       {tagItem}

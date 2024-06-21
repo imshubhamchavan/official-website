@@ -64,7 +64,7 @@ export function Navbar() {
                 <Link href={item.href} legacyBehavior passHref>
                   <NavigationMenuLink
                     active={pathname === item.href}
-                    className={navigationMenuTriggerStyle()} 
+                    className= {navigationMenuTriggerStyle()} 
                   >
                      {item.icon && <item.icon className="inline-block w-4 h-4 mr-2" />}
                     {item.name}
@@ -84,7 +84,7 @@ export function Navbar() {
             className="relative overflow-hidden px-4 py-4 mt-4 hidden sm:flex  rounded-full text-xsm border-black hover:text-white group"
           >
             <span className="relative text-1xl z-10">
-              <a href="mailto:imshubhamchavan@gmail.com">Contact</a>
+              <a href="mailto:imshubhamchavan@gmail.com">Connect me</a>
             </span>
             <span className="absolute inset-0 bg-black transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
           </Button>
