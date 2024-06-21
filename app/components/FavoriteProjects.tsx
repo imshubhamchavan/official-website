@@ -29,7 +29,7 @@ export async function FavoriteProjects() {
   return (
     <div>
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
-    <div className="flex space-x-8 flex flex-col mb-24">
+    <div className="flex space-x-8 flex-col mb-24">
         <h1 className="text-6xl lg:text-6xl rubik-scribble text-white ml-5 mt-28">
           Recent Projects
         </h1>
@@ -39,7 +39,7 @@ export async function FavoriteProjects() {
         expertise as a frontend developer.</p>
 </div>
       </div>
-    <div className="py-12 grid md:grid-cols-2 gap-2 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 ">
+    <div className="py-12 grid md:grid-cols-2 gap-16 md:gap-8 lg:gap-12 grid-cols-1 ">
           {data.map((item) => (
             <a
               href={item.link}

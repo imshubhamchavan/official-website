@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div>
       <title>About|Shubham Chavan</title>
-      <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300 ml-5 mr-5 mt-12">
+      <h1 className="text-6xl lg:text-8xl rubik-scribble text-center text-gray-300 mt-12">
         About me !
       </h1>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
@@ -14,11 +14,11 @@ export default function About() {
           <Image
             src={myimg}
             alt="shubham chavan"
-            className="col-span-2 h-[650px] object-cover animate-slide-in rounded-2xl mt-8 bg-gray-100 "
+            className="col-span-2 h-[480px] md:h-[650px] object-cover animate-slide-in rounded-2xl mt-8 bg-gray-100 "
             priority
           />
 
-          <div className="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8">
+          <div className="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px] rounded-2xl pl-2 md:p-8">
             <div className="lg:text-lg ">
               <div className="mb-6">
 

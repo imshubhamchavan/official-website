@@ -30,11 +30,11 @@ export function Hero() {
   });
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 h-full">
+    <div className="grid lg:grid-cols-3 h-full">
       <title>Shubham Chavan | Portfolio</title>
-      <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-16">
-      <div className="sm:text-center">
-      <h1 className="text-3xl font-bold rubik-scribble-regular text-gray-600 sm:text-3xl lg:text-7xl sm:text-center sm:mx-auto">
+      <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-8 md:mt-16">
+      <div className="text-center">
+      <h1 className="text-3xl font-bold rubik-scribble-regular text-gray-600 md:text-3xl lg:text-7xl md:text-center ">
   SHUBHAM CHAVAN
 </h1></div>
 {" "}
@@ -56,7 +56,7 @@ export function Hero() {
       <Image
         src={myimg}
         alt="shubham chavan"
-        className="col-span-1 h-[550px] animate-slide-in-right object-cover rounded-2xl hidden sm:block"
+        className="col-span-1 h-[550px] animate-slide-in-right object-cover rounded-2xl hidden md:block"
         priority
       /></div>
     </div>

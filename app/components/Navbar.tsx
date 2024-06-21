@@ -81,7 +81,7 @@ export function Navbar() {
         <HoverCardTrigger asChild>
           <Button
             variant="outline"
-            className="relative overflow-hidden px-4 py-4 mt-4 hidden sm:flex  rounded-full text-xsm border-black hover:text-white group"
+            className="relative overflow-hidden px-4 py-4 mt-4 hidden md:flex  rounded-full text-xsm border-black hover:text-white group"
           >
             <span className="relative text-1xl z-10">
               <a href="mailto:imshubhamchavan@gmail.com"> <span className="relative z-10 flex items-center">

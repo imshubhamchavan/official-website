@@ -24,7 +24,7 @@ export default async function ProjectsPage() {
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
       <section className="max-w-3xl w-full px-4 md:px-8 mx-auto">
-      <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300 ml-5 mr-5 ">
+      <h1 className="text-8xl lg:text-8xl rubik-scribble text-center text-gray-300 ml-5 mr-5 ">
         Projects
       </h1>
       <p className="text-1xl lg:text-1xl noto-sans text-gray-500  mt-12 mb-4 text-center">
@@ -34,7 +34,7 @@ export default async function ProjectsPage() {
         technologies such as Next.js, Tailwind CSS, and more.
       </p></section>
       <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
-        <div className="py-12 grid md:grid-cols-3 gap-2 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 ">
+        <div className="py-12 grid md:grid-cols-3 gap-16 md:gap-8 lg:gap-12 grid-cols-1 ">
           {data.map((item) => (
             <a
               href={item.link}

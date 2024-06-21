@@ -65,8 +65,8 @@ const icons = [
 
 export function AboutSection() {
   return (
-    <div className="  mt-24 font-thin">
-      <div className="flex space-x-8 flex flex-col">
+    <div className="  mt-4 md:mt-24 font-thin">
+      <div className="flex space-x-2 md:space-x-8 flex-col">
         <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300">
           Skills and Technologies
         </h1>
@@ -75,15 +75,18 @@ export function AboutSection() {
         <p className="noto-sans text-gray-800 max-w-3xl w-full px-4 md:px-8 mx-auto">Welcome! Take a moment to explore the diverse range of <span className="font-extrabold">skills</span>  and technologies I utilize. From cutting-edge web technologies and <span className="font-extrabold">frameworks</span> to essential design tools and programming languages.</p>
 </div>
       </div>
-      <div className=" mt-24 ">
-      <Card className="col-span-1 lg:col-span-2 border-none p-8 bg-transparent">
-  <CardContent className="flex flex-wrap justify-center items-center gap-8 ">
+
+      {/* skills section */}
+
+      <div className=" mt-12 md:mt-24">
+      <Card className="col-span-1 lg:col-span-2 border-none p-4 md:p-8 bg-transparent">
+  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8  ">
     {icons.map((item, index) => (
       <div key={index} className="group relative">
         <Image
           src={item}
           alt="Icon"
-          className="w-16 h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+          className="w-12 h-12 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
         />
       </div>
     ))}
@@ -95,21 +98,21 @@ export function AboutSection() {
     
     </CardTitle>
   </CardHeader>
-  <CardContent className="flex flex-wrap justify-center items-center gap-8 ">
+  <CardContent className=" flex flex-wrap justify-center items-center gap-8 ">
   
     {stack_icons.map((item, index) => (
       <div key={index} className="group relative">
         <Image
           src={item}
           alt="Icon"
-          className="w-16 h-16 sm:w-8 sm:h-8 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+          className="w-14 h-14 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
         />
       </div>
     ))}
   </CardContent>
 </Card>
 
-  <div className="relative flex justify-center mt-24">
+  <div className="relative flex justify-center mt-12 md:mt-24">
     <Link
       href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing"
       passHref

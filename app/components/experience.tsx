@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-4 md:p-2">
       <h1 className="text-6xl lg:text-6xl rubik-scribble text-white mt-28 md:ml-12">
         Professional Experience
       </h1>
