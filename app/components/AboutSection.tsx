@@ -67,7 +67,7 @@ export function AboutSection() {
   return (
     <div className="  mt-4 md:mt-24 font-thin">
       <div className="flex space-x-2 md:space-x-8 flex-col">
-        <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300">
+        <h1 className="text-4xl lg:text-7xl rubik-scribble text-center text-gray-300">
           Skills and Technologies
         </h1>
         <div className="mt-8  text-center">
@@ -114,7 +114,7 @@ export function AboutSection() {
 
   <div className="relative flex justify-center mt-12 md:mt-24">
     <Link
-      href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing"
+      href="https://flowcv.com/resume/ssw2v8kt0u"
       passHref
     >
       <Button
@@ -122,11 +122,12 @@ export function AboutSection() {
   className="relative overflow-hidden mb-10 flex font-bold items-center ml-auto bg-white text-red-600 rounded-full border-red-600 px-6 py-4 z-10 group"
   rel="noopener noreferrer"
   title="Download Resume"
+  
 >
-  <span className="relative z-10 flex items-center">
+  <span className="relative z-10 flex items-center group-hover:text-white">
     Download Resume <DownloadIcon className="ml-2" />
   </span>
-  <span className="absolute inset-0 bg-red-600 transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+  <span className="absolute inset-0 bg-red-600  transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
 </Button>
 
     </Link>

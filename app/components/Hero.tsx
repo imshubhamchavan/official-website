@@ -32,21 +32,21 @@ export function Hero() {
   return (
     <div className="grid lg:grid-cols-3 h-full">
       <title>Shubham Chavan | Portfolio</title>
-      <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-8 md:mt-16">
+      <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px]  mt-8 md:mt-16">
       <div className="text-center">
-      <h1 className="text-3xl font-bold rubik-scribble-regular text-gray-600 md:text-3xl lg:text-7xl md:text-center ">
+      <h1 className="text-4xl font-bold rubik-scribble-regular text-stroke md:text-7xl lg:text-8xl md:text-center ">
   SHUBHAM CHAVAN
 </h1></div>
 {" "}
-        <div className="text-center rubik-scribble-regular text-gray-400">
+        <div className="text-center rubik-scribble-regular text-gray-700">
           <h2>Frontend Developer</h2>
         </div>
         <br />
         <br />
         <br />
         <br />
-        <h1 className="text-center rubik-scribble-regular text-1xl sm:text-1xl lg:text-3xl">
-          <span className={colorMap[text] || "text-black"}>{text}</span>
+        <h1 className="text-center rubik-scribble-regular text-1xl md:text-2xl lg:text-3xl">
+          <span className={colorMap[text] || "text-gray-400"}>{text}</span>
           <span className="">
             <Cursor />
           </span>
@@ -56,7 +56,7 @@ export function Hero() {
       <Image
         src={myimg}
         alt="shubham chavan"
-        className="col-span-1 h-[550px] animate-slide-in-right object-cover rounded-2xl hidden md:block"
+        className="col-span-1 h-[500px] mt-4 animate-slide-in-right object-cover rounded-2xl hidden md:block"
         priority
       /></div>
     </div>
