@@ -35,7 +35,8 @@ export async function FavoriteProjects() {
         </h1>
         <div className="mt-8 w-2/3 lg:w-1/2 text-left">
 
-        <p className="noto-sans text-gray-300 ">Welcome! Take a moment to explore the diverse range of skills and technologies I utilize. From cutting-edge web technologies and frameworks to essential design tools and programming languages.</p>
+        <p className="noto-sans text-gray-300 ">Here are some of my recent projects that showcase my skills and
+        expertise as a frontend developer.</p>
 </div>
       </div>
     <div className="py-12 grid md:grid-cols-2 gap-2 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 ">

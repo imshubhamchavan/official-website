@@ -14,7 +14,7 @@ export default function About() {
           <Image
             src={myimg}
             alt="shubham chavan"
-            className="col-span-2 h-[700px] object-cover animate-slide-in rounded-2xl mt-8 bg-gray-100 "
+            className="col-span-2 h-[650px] object-cover animate-slide-in rounded-2xl mt-8 bg-gray-100 "
             priority
           />
 
@@ -26,8 +26,8 @@ export default function About() {
 
                 <div className="content ">
                   <div className="key-point ">
-                    <h3 className="mb-2 text-1xl lg:text-2xl rubik-scribble">Basic Information -</h3>
-                    <p className="text-lg noto-sans text-gray-800">
+                    <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble">Basic Information -</h3>
+                    <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-800">
                     <span className="font-extrabold  text-black">Shubham Chavan </span>is a dedicated and innovative <span className="font-extrabold  text-black"> web-developer </span>
                       based in India 🇮🇳. He specializes in crafting
                       sophisticated web applications using Next.js and React.js.
@@ -35,8 +35,8 @@ export default function About() {
                   </div><br />
 
                   <div className="key-point ">
-                    <h3 className="mb-2 text-1xl lg:text-2xl rubik-scribble ">Journey Starts-</h3>
-                    <p className="text-lg noto-sans text-gray-800">
+                    <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble ">Journey Starts-</h3>
+                    <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-800">
                       Shubham’s journey began with a Bachelor’s Degree in 
                       <span className="font-extrabold  text-black"> Computer Science</span> from the University of Amravati,
                       completed in 2019. It was during this time that he
@@ -46,8 +46,8 @@ export default function About() {
                   </div><br />
 
                   <div className="key-point">
-                    <h3 className="mb-2 text-1xl lg:text-2xl rubik-scribble ">Expertise-</h3>
-                    <p className="text-lg noto-sans text-gray-800">
+                    <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble ">Expertise-</h3>
+                    <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-800">
                       Shubham’s expertise lies in crafting responsive and
                       scalable web applications using cutting-edge technologies.
                       He favors<span className="font-extrabold  text-black"> Next.js </span>for its exceptional server-side

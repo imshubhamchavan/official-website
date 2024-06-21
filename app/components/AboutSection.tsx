@@ -67,12 +67,12 @@ export function AboutSection() {
   return (
     <div className="  mt-24 font-thin">
       <div className="flex space-x-8 flex flex-col">
-        <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300 ml-5 mr-5">
+        <h1 className="text-4xl lg:text-8xl rubik-scribble text-center text-gray-300">
           Skills and Technologies
         </h1>
         <div className="mt-8  text-center">
 
-        <p className="noto-sans text-gray-800 max-w-2xl w-full px-4 md:px-8 mx-auto">Welcome! Take a moment to explore the diverse range of <span className="font-extrabold">skills</span>  and technologies I utilize. From cutting-edge web technologies and <span className="font-extrabold">frameworks</span> to essential design tools and programming languages.</p>
+        <p className="noto-sans text-gray-800 max-w-3xl w-full px-4 md:px-8 mx-auto">Welcome! Take a moment to explore the diverse range of <span className="font-extrabold">skills</span>  and technologies I utilize. From cutting-edge web technologies and <span className="font-extrabold">frameworks</span> to essential design tools and programming languages.</p>
 </div>
       </div>
       <div className=" mt-24 ">

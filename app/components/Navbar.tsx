@@ -10,7 +10,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { EnvelopeClosedIcon, HomeIcon, Link1Icon, LinkedInLogoIcon, PersonIcon } from '@radix-ui/react-icons';
+import { EnvelopeClosedIcon, HomeIcon, Link1Icon, LinkedInLogoIcon, PersonIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -84,7 +84,9 @@ export function Navbar() {
             className="relative overflow-hidden px-4 py-4 mt-4 hidden sm:flex  rounded-full text-xsm border-black hover:text-white group"
           >
             <span className="relative text-1xl z-10">
-              <a href="mailto:imshubhamchavan@gmail.com">Connect me</a>
+              <a href="mailto:imshubhamchavan@gmail.com"> <span className="relative z-10 flex items-center">
+              Contact <ArrowTopRightIcon className="ml-2"/>
+  </span></a>
             </span>
             <span className="absolute inset-0 bg-black transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
           </Button>

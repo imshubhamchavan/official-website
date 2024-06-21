@@ -34,7 +34,7 @@ export function Hero() {
       <title>Shubham Chavan | Portfolio</title>
       <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px] rounded-2xl p-8 mt-16">
       <div className="sm:text-center">
-      <h1 className="text-4xl font-bold rubik-scribble-regular text-gray-600 sm:text-4xl lg:text-7xl sm:text-center sm:mx-auto">
+      <h1 className="text-3xl font-bold rubik-scribble-regular text-gray-600 sm:text-3xl lg:text-7xl sm:text-center sm:mx-auto">
   SHUBHAM CHAVAN
 </h1></div>
 {" "}

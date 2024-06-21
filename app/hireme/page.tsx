@@ -8,14 +8,13 @@ import {
 import {
   EnvelopeClosedIcon,
   LinkedInLogoIcon,
-  PersonIcon,
   Link1Icon,
-  HomeIcon,
+  PersonIcon,
 } from "@radix-ui/react-icons";
 
 export default function Hireme() {
   return (
-    <div className="flex flex-col items-center justify-center bg-white h-screen relative overflow-hidden">
+    <div className="relative overflow-hidden bg-white h-screen flex flex-col items-center justify-center">
       <div className="flex space-x-4"></div>
       <h1 className="text-6xl sm:text-3xl lg:text-7xl font-normal mt-8 mb-20">
         Looking for a Frontend Developer?
@@ -65,7 +64,7 @@ export default function Hireme() {
           </div>
         </HoverCardContent>
       </HoverCard>
-      <h1 className="w-full text-7xl font-extrabold text-gray-200 sm:text-8xl lg:text-12xl text-center absolute bottom-0 z-0 overflow-hidden">
+      <h1 className="absolute bottom-0 z-0 w-full text-center text-7xl font-extrabold text-gray-200 sm:text-8xl lg:text-12xl">
         Hire Me
       </h1>
     </div>
