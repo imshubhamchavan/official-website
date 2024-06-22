@@ -34,11 +34,11 @@ export function Hero() {
       <title>Shubham Chavan | Portfolio</title>
       <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px]  mt-8 md:mt-16">
       <div className="text-center">
-      <h1 className="text-6xl font-bold rubik-scribble-regular text-gray-500 md:text-7xl lg:text-8xl md:text-center ">
+      <h1 className="text-6xl font-bold rubik-scribble-regular text-gray-500 md:text-stroke md:font-extrabold md:text-7xl lg:text-8xl md:text-center ">
   SHUBHAM CHAVAN
 </h1></div>
 {" "}
-        <div className="text-center rubik-scribble-regular text-gray-700">
+        <div className="text-center rubik-scribble-regular text-gray-300 md:text-gray-700 ">
           <h2>Frontend Developer</h2>
         </div>
         <br />

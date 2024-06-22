@@ -1,12 +1,11 @@
 import Image from "next/image";
 import myimg from "../../public/me2.jpg";
 import Experience from "../components/experience";
-import Certificate from "../../public/meta certificate.png"
-import metalogo from "../../public/meta.png"
+import Certificates from "../components/Certificates";
 
 export default function About() {
   return (
-    <div>
+    <div className="">
       <title>About|Shubham Chavan</title>
       <h1 className="text-6xl lg:text-8xl rubik-scribble text-center text-gray-300 mt-12">
         About me !
@@ -16,7 +15,7 @@ export default function About() {
           <Image
             src={myimg}
             alt="shubham chavan"
-            className="col-span-2 h-[480px] md:h-[650px] object-cover animate-slide-in rounded-2xl mt-8 bg-gray-100 "
+            className="col-span-2 h-[480px] md:h-[650px] object-cover transition-all duration-500 ease-in-out rounded-2xl mt-8 bg-gray-100 grayscale-100 hover:grayscale-0"
             priority
           />
 
@@ -67,27 +66,7 @@ export default function About() {
       </div>
       <div className="w-full bg-black">
         <Experience />
-        <div className=" relative overflow-hidden bg-white h-screen flex flex-col items-center">
-      <div className="flex space-x-4"></div>
-      <h1 className="text-4xl sm:text-3xl lg:text-7xl font-semibold mt-24 mb-20">
-        CERTIFICATES
-      </h1>
-      <div className="">
-        <a 
-          href="https://coursera.org/share/b816c049f3652ba851d4b55e242003dd" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="flex flex-col items-center"
-        >
-          <Image 
-            src= {Certificate}
-            alt="React Basic by Meta" 
-            className="w-80 h-50   md:w-[250px] md:h-[200px] lg:w-[450px] lg:h-[400px] object-contain flex flex-col items-center"
-          />
-          <h1 className="text-lg sm:text-sm lg:text-lg font-semibold text-gray-800 mb-8">React Basic By <Image src={metalogo} alt="Meta Logo" className="inline-block h-6 w-auto mr-2 ml-4" />Meta(2024)</h1>
-        </a>
-      </div>
-    </div>
+        <Certificates/>
       </div>
     </div>
   );

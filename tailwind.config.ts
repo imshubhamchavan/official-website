@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      grayscale: {
+        50: '50%',
+        100: '100%',
+      },
+      transitionProperty: {
+        'grayscale': 'grayscale',
+      },
       colors: {
         fontSize: {
           '10xl': '8rem',
