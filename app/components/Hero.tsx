@@ -34,7 +34,7 @@ export function Hero() {
       <title>Shubham Chavan | Portfolio</title>
       <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px]  mt-8 md:mt-16">
       <div className="text-center">
-      <h1 className="text-4xl font-bold rubik-scribble-regular text-stroke md:text-7xl lg:text-8xl md:text-center ">
+      <h1 className="text-6xl font-bold rubik-scribble-regular text-gray-500 md:text-7xl lg:text-8xl md:text-center ">
   SHUBHAM CHAVAN
 </h1></div>
 {" "}
@@ -45,7 +45,7 @@ export function Hero() {
         <br />
         <br />
         <br />
-        <h1 className="text-center rubik-scribble-regular text-1xl md:text-2xl lg:text-3xl">
+        <h1 className="text-center rubik-scribble-regular text-2xl md:text-2xl lg:text-3xl">
           <span className={colorMap[text] || "text-gray-400"}>{text}</span>
           <span className="">
             <Cursor />

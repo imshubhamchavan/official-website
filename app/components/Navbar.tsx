@@ -116,7 +116,7 @@ export function Navbar() {
               </div>
               <div className="text-sm flex mt-4">
                 <Link1Icon className="mr-3" />
-                <a href="https://drive.google.com/file/d/1V8weoHW9mA-hRoMivTrTTKVVxD_YS6sX/view?usp=sharing">
+                <a href="https://flowcv.com/resume/ssw2v8kt0u">
                   Resume
                 </a>
               </div>
