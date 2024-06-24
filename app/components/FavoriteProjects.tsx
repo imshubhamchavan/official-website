@@ -4,6 +4,9 @@ import { client } from "../lib/sanity";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
+import Hireme from "./Hireme";
+
+
 
 
 async function getData() {
@@ -27,10 +30,10 @@ export async function FavoriteProjects() {
 
   console.log(data);
   return (
-    <div>
+    <div  className="scroll-end">
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
     <div className="flex space-x-8 flex-col mb-24">
-        <h1 className="text-6xl lg:text-6xl rubik-scribble text-white ml-5 mt-28">
+        <h1 className="content text-6xl lg:text-6xl rubik-scribble text-white ml-5 mt-28">
           Recent Projects
         </h1>
         <div className="mt-8 w-2/3 lg:w-1/2 text-left">
@@ -86,7 +89,7 @@ export async function FavoriteProjects() {
         </Button></Link>
         <h2 className="text-gray-500 font-normal mt-6 mb-8">take a look at my other projects</h2>
       </div>
-    </div>{"flex"}
+    </div>
     </div>
   );
 }

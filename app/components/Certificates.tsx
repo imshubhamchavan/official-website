@@ -21,7 +21,7 @@ export default function Certificates() {
             alt="React Basic by Meta"
             className="w-80 h-50   md:w-[250px] md:h-[200px] lg:w-[450px] lg:h-[400px] hover:w-[650px] object-contain flex flex-col items-center"
           />
-          <h1 className="text-lg sm:text-sm lg:text-lg font-semibold text-gray-800 mb-8">
+          <h1 className="text-lg sm:text-sm lg:text-lg font-semibold text-gray-800 mb-4">
             React Basics By{" "}
             <Image
               src={metalogo}
@@ -30,6 +30,7 @@ export default function Certificates() {
             />
             <span className="text-blue-500 font-bold">Meta</span>(2024)
           </h1>
+          <p className="text-gray-700 font-normal">Grade Achieved: 90%</p>
         </a>
       </div>
     </div>

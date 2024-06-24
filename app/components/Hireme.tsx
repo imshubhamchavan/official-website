@@ -14,7 +14,7 @@ import {
 
 export default function Hireme() {
   return (
-    <div className="relative  bg-white h-screen flex flex-col items-center justify-center ">
+    <div className="relative bg-white h-screen flex flex-col items-center justify-center ">
       <div className="flex space-x-4"></div>
       <h1 className="text-4xl sm:text-3xl lg:text-7xl font-normal mt-8 mb-20">
         Looking for a Frontend Developer?

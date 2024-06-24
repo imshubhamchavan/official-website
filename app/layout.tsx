@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth focus:scroll-auto">
       <head>
         {/* Open Graph Meta Tags */}
         <meta property="og:url" content="https://shubhamzone.vercel.app/" />
@@ -82,6 +82,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={inter.className}>
+        
         <Navbar />
         {children}
         <Hireme/>

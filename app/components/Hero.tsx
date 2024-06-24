@@ -1,9 +1,15 @@
 "use client";
 import myimg from "../../public/male0086.png";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import logo from "../../public/shubhazone-logo.png"
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const words = [
   "Expert Web Developer",
@@ -15,19 +21,33 @@ const words = [
 ];
 
 const colorMap: { [key: string]: string } = {
-  "Expert Web Developer": "text-red-500",
-  "Next.js Specialist": "text-blue-500",
-  "Coffee Is Life": "text-green-500",
-  "Creative Artist": "text-yellow-500",
-  "Illustrious Photographer": "text-purple-500",
+  "Expert Web Developer": "text-red-500 karla ",
+  "Next.js Specialist": "text-blue-500 karla ",
+  "Coffee Is Life": "text-green-500 karla ",
+  "Creative Artist": "text-yellow-500 karla ",
+  "Illustrious Photographer": "text-purple-500 karla",
 };
 
 export function Hero() {
   const [text] = useTypewriter({
     words: words,
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
+    typeSpeed: 80,     // speed of typing
+    deleteSpeed: 30, 
   });
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      gsap.to(".icons", {
+        rotate: 720,
+        duration: 4,
+        ease: "bounce.out",
+      });
+    }
+  }, []);
 
   return (
     <div className="grid lg:grid-cols-3 h-full">
@@ -45,10 +65,11 @@ export function Hero() {
         <br />
         <br />
         <br />
-        <h1 className="text-center rubik-scribble-regular text-2xl md:text-2xl lg:text-3xl">
-          <span className={colorMap[text] || "text-gray-400"}>{text}</span>
+        <h1 className="text-center playfair-display text-2xl md:text-2xl lg:text-3xl">
+
+          <span className={colorMap[text] || "text-gray-400 karla"}>“ {text} ”</span>
           <span className="">
-            <Cursor />
+           
           </span>
         </h1>
       </div>
@@ -56,7 +77,7 @@ export function Hero() {
       <Image
         src={myimg}
         alt="shubham chavan"
-        className="col-span-1 h-[500px] mt-4 animate-slide-in-right object-cover rounded-2xl hidden md:block"
+        className="col-span-1 h-[500px] mt-4  object-cover hidden md:block"
         priority
       /></div>
     </div>
