@@ -71,7 +71,7 @@ export function SectionTwo() {
         Me On
       </h1>
       <div className="h-28 sm:h-28 border-r border-black mr-2 mt-4"></div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-12 md:mx-0">
         {socialMedia.map((item) => (
 
           //social media cards 
@@ -80,7 +80,7 @@ export function SectionTwo() {
               <Image
                 src={item.icon}
                 alt="Icon"
-                className="w-8 h-8 md:w-14 md:h-14 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                className="w-12 h-12 md:w-14 md:h-14 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
               />{" "}
               <div className="mr-4 ml-0">
                 <CardTitle
@@ -99,7 +99,7 @@ export function SectionTwo() {
               <p>{item.description} </p>
             </CardContent>
             <Button
-              className="mt-4 bg-white font-bold border border-black text-black hover:text-white text-center md:w-full"
+              className="mt-4 bg-white font-bold border border-black text-black hover:text-white text-center w-full"
               size="sm"
               asChild
             >

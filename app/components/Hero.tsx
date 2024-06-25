@@ -50,15 +50,15 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="bg-white">
-      <div className="grid lg:grid-cols-3  max-w-7xl w-full px-4 md:px-4 mx-auto mt-8">
+    <div className="bg-white max-w-7xl w-full px-12 md:px-4 mx-auto mt-8" >
+      <div className="grid lg:grid-cols-3  ">
         <title>Shubham Chavan | Portfolio</title>
         <div className="col-span-1 lg:col-span-3  h-full min-h-[500px] lg:min-h-[300px]  mt-4 md:mt-6">
           <div className="animate-slide-in">
             <HelloText />
           </div>
           <div className="mt-4 animate-slide-in-right">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl text-black font-thin  ">
+            <h1 className="text-5xl md:text-6xl lg:text-8xl text-black font-thin  ">
               BORN IN THE DIGITAL AGE,{" "}
               <span className="cinzel-about ">SHUBHAM</span> IS A <p className="cinzel-about">FRONTEND DEVELOPER</p> BASED IN{" "}
               <span className="text-orange-500 cinzel-about">MAHARASHTRA</span>,

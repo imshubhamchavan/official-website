@@ -3,6 +3,7 @@ import { SectionTwo } from "./components/SectionTwo";
 import { AboutSection } from "./components/AboutSection";
 import { FavoriteProjects } from "./components/FavoriteProjects";
 
+
 export default function Home() {
   return (
     <div>
