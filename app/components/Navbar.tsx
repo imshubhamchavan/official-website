@@ -36,6 +36,7 @@ export const navigationItems = [
     name: "About",
     href: "/about",
   },
+  
 ];
 
 export function Navbar() {
@@ -84,7 +85,7 @@ export function Navbar() {
             className="relative overflow-hidden px-4 py-4 mt-4 hidden md:flex  rounded-full text-xsm border-black hover:text-white group"
           >
             <span className="relative text-1xl z-10">
-              <a href="mailto:imshubhamchavan@gmail.com"> <span className="relative z-10 flex items-center">
+              <a href="/contact"> <span className="relative z-10 flex items-center">
               Contact <ArrowTopRightIcon className="ml-2"/>
   </span></a>
             </span>
