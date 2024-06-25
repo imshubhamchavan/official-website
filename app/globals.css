@@ -55,6 +55,21 @@
 }
 
 
+.word-travel {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides text that overflows */
+  animation: travel 25s linear infinite; /* Animation definition */
+}
+
+@keyframes travel {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 .animate-slide-in-bottom {
   animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -75,7 +90,7 @@
 .karla {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -120,6 +135,11 @@
   font-weight: 700;
   font-style: normal;
 }
+.rubik-scribble-thin {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 .cinzel {
@@ -132,6 +152,12 @@
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+.cinzel-thin {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
 }
 

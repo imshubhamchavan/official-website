@@ -71,11 +71,11 @@ export function AboutSection() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      gsap.to(".icons", {     
+      gsap.to(".icons", {
         rotate: 720,
-         duration: 1,
-  ease: 'bounce.out',
-        
+        duration: 1,
+        delay: 2,
+        ease: "bounce.out",
       });
 
       // gsap.from(".about", {
@@ -90,13 +90,13 @@ export function AboutSection() {
     }
   }, []);
   return (
-    <div className="panel align-top about mt-4 md:mt-24 font-thin">
+    <div className="panel align-top about font-thin mt-24">
       <div className="about-content flex space-x-2 md:space-x-8 flex-col">
-        <h1 className=" text-5xl lg:text-7xl rubik-scribble text-center text-gray-300">
+        <h1 className=" text-5xl lg:text-7xl rubik-scribble text-center">
           Skills and Technologies
         </h1>
         <div className="mt-8  text-center">
-          <p className="noto-sans text-gray-800 max-w-3xl w-full px-4 md:px-8 mx-auto">
+          <p className="font-normal text-gray-600 max-w-3xl w-full px-4 md:px-8 mx-auto">
             Welcome! Take a moment to explore the diverse range of{" "}
             <span className="font-extrabold">skills</span> and technologies I
             utilize. From cutting-edge web technologies and{" "}

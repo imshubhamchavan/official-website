@@ -3,7 +3,8 @@ import myimg from "../../public/male0086.png";
 import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import logo from "../../public/shubhazone-logo.png"
+import logo from "../../public/shubhazone-logo.png";
+import { HelloText } from "./HelloText";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -17,14 +18,13 @@ const words = [
   "Coffee Is Life",
   "Creative Artist",
   "Illustrious Photographer",
-  
 ];
 
 const colorMap: { [key: string]: string } = {
-  "Expert Web Developer": "text-red-500 karla ",
-  "Next.js Specialist": "text-blue-500 karla ",
-  "Coffee Is Life": "text-green-500 karla ",
-  "Creative Artist": "text-yellow-500 karla ",
+  "Expert Web Developer": "text-purple-500 karla ",
+  "Next.js Specialist": "text-orange-500 karla ",
+  "Coffee Is Life": "text-purple-500 karla ",
+  "Creative Artist": "text-orange-500 karla ",
   "Illustrious Photographer": "text-purple-500 karla",
 };
 
@@ -33,53 +33,62 @@ export function Hero() {
     words: words,
     loop: true,
     delaySpeed: 1000,
-    typeSpeed: 80,     // speed of typing
-    deleteSpeed: 30, 
+    typeSpeed: 80, // speed of typing
+    deleteSpeed: 30,
   });
 
   const containerRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      gsap.to(".icons", {
+      gsap.to(".mainicon", {
         rotate: 720,
-        duration: 4,
-        ease: "bounce.out",
+        duration: 2,
+        ease: "bounce.in",
       });
     }
   }, []);
 
   return (
-    <div className="grid lg:grid-cols-3 h-full">
-      <title>Shubham Chavan | Portfolio</title>
-      <div className="col-span-1 lg:col-span-2 animate-slide-in h-full min-h-[500px] lg:min-h-[300px]  mt-8 md:mt-16">
-      <div className="text-center">
-      <h1 className="text-6xl font-bold rubik-scribble-regular text-gray-500 md:text-stroke md:font-extrabold md:text-7xl lg:text-8xl md:text-center ">
-  SHUBHAM CHAVAN
-</h1></div>
-{" "}
-        <div className="text-center rubik-scribble-regular text-gray-300 md:text-gray-700 ">
-          <h2>Frontend Developer</h2>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1 className="text-center playfair-display text-2xl md:text-2xl lg:text-3xl">
-
-          <span className={colorMap[text] || "text-gray-400 karla"}>“ {text} ”</span>
-          <span className="">
-           
+    <div className="bg-white">
+      <div className="grid lg:grid-cols-3  max-w-7xl w-full px-4 md:px-4 mx-auto mt-8">
+        <title>Shubham Chavan | Portfolio</title>
+        <div className="col-span-1 lg:col-span-3  h-full min-h-[500px] lg:min-h-[300px]  mt-4 md:mt-6">
+          <div className="animate-slide-in">
+            <HelloText />
+          </div>
+          <div className="mt-4 animate-slide-in-right">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl text-black font-thin  ">
+              BORN IN THE DIGITAL AGE,{" "}
+              <span className="cinzel-about ">SHUBHAM</span> IS A <p className="cinzel-about">FRONTEND DEVELOPER</p> BASED IN{" "}
+              <span className="text-orange-500 cinzel-about">MAHARASHTRA</span>,
+            </h1>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl text-purple-500 cinzel-about ">
+              INDIA
+            </h1>
+          </div>{" "}
+          
+          {/* <h1 className="text-center playfair-display mb-28 text-2xl md:text-2xl lg:text-3xl">
+          <span className={colorMap[text] || "text-gray-400 karla"}>
+            “ {text} ”
           </span>
-        </h1>
-      </div>
-      <div className="relative overflow-visible">
+          <span className=""></span>
+        </h1> */}
+        </div>
+        {/* <div className="relative overflow-visible">
       <Image
         src={myimg}
         alt="shubham chavan"
         className="col-span-1 h-[500px] mt-4  object-cover hidden md:block"
         priority
-      /></div>
+      /></div> */}
+      </div>
+      <div className="max-w-7xl w-full content-end mt-4">
+        <h1 className="text-right font-thin text-4xl md:text-4xl font-small lg:text-5xl">
+          Explore
+        </h1>
+        <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
+      </div>
     </div>
   );
 }

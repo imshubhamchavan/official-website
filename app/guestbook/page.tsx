@@ -39,7 +39,9 @@ export default function GuestbookPage() {
   return (
     <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
       <title>Guestbook|Shubham Chavan</title>
-      <h1 className="text-4xl font-semibold lg:text-5xl animate-slide-in pt-5 rubik">Guestbook</h1>
+      <div className="border-black border-b flex flex-col items-center mb-12 text-center  mt-24">
+      <h1 className="text-5xl md:text-6xl karla lg:text-8xl  font-normal mb-4">Guestbook</h1>
+      </div>
       <h1 className="leading-7 text-muted-foreground mt-2">Sign my Guestbook!</h1>
 
       <Card className="mt-10">
