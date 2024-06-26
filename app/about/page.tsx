@@ -32,7 +32,7 @@ export default function About() {
         <title>About|Shubham Chavan</title>
 
         {/* hero section */}
-        <div className="flex flex-col items-center mb-12 text-center text-2xl md:text-6xl lg:text-8xl">
+        <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
           <h1 className="font-thin mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
             GOOD THINGS{" "}
             <Image
@@ -72,11 +72,11 @@ export default function About() {
                         Basic Information -
                       </h3>
                       <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-700">
-                        <span className="font-extrabold  text-gray-800">
+                        <span className="font-extrabold  text-purple-500">
                           Shubham Chavan{" "}
                         </span>
                         is a dedicated and innovative{" "}
-                        <span className="font-extrabold  text-gray-800">
+                        <span className="font-extrabold  text-orange-500">
                           {" "}
                           web-developer{" "}
                         </span>
@@ -93,14 +93,14 @@ export default function About() {
                       </h3>
                       <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-700">
                         Shubham’s journey began with a Bachelor’s Degree in
-                        <span className="font-extrabold  text-gray-800">
+                        <span className="font-extrabold  text-purple-500">
                           {" "}
                           Computer Science
                         </span>{" "}
                         from the University of Amravati, completed in 2019. It
                         was during this time that he discovered his passion for
                         coding and creating impactful
-                        <span className="font-extrabold text-gray-800">
+                        <span className="font-extrabold text-orange-500">
                           {" "}
                           software solutions.
                         </span>
@@ -116,13 +116,13 @@ export default function About() {
                         Shubham’s expertise lies in crafting responsive and
                         scalable web applications using cutting-edge
                         technologies. He favors
-                        <span className="font-extrabold  text-gray-800">
+                        <span className="font-extrabold  text-purple-500">
                           {" "}
                           Next.js{" "}
                         </span>
                         for its exceptional server-side rendering capabilities
                         and utilizes
-                        <span className="font-extrabold  text-gray-800">
+                        <span className="font-extrabold  text-orange-500">
                           {" "}
                           React.js{" "}
                         </span>

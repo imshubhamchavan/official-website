@@ -23,14 +23,14 @@ export default async function ProjectsPage() {
   return (
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
-      <section className="flex flex-col items-center mb-12 text-center text-2xl md:text-6xl lg:text-8xl">
+      <section className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
         <p className="karla ">Explore</p>
         <h1 className="font-thin  px-8 mb-6 flex items-center justify-center space-x-2">
           my diverse range of projects
         </h1>
       </section>
       <div className="bg-purple-500 text-center py-1">
-        <div className="text-2xl lg:text-2xl text-white">
+        <div className="text-1xl lg:text-2xl text-white">
           {" "}
           Showcasing my expertise in{" "}
           <span className="font-bold">web development</span>. Using modern

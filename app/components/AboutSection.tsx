@@ -93,7 +93,7 @@ export function AboutSection() {
             Skills and Technologies
           </h1>
           <div className="mt-8 text-center">
-            <p className="font-normal text-gray-600 max-w-3xl w-full px-4 md:px-8 mx-auto">
+            <p className="text-2xl md:text-5xl font-normal text-gray-600 max-w-3xl w-full px-4 md:px-8 mx-auto">
               Welcome! Take a moment to explore the diverse range of{" "}
               <span className="font-extrabold">skills</span> and technologies I
               utilize. From cutting-edge web technologies and{" "}
