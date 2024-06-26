@@ -82,10 +82,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={inter.className}>
-        
         <Navbar />
         {children}
-        <Hireme/>
+        <Hireme />
         <Footer />
       </body>
     </html>

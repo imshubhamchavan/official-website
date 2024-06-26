@@ -55,7 +55,7 @@ export default async function ProjectsPage() {
                 key={item._id}
                 className="group block"
                 target="_blank"
-              ><h2 className="text-2xl md:text-4xl lg:text-6xl font-thin mb-8">
+              ><h2 className="text-2xl md:text-4xl lg:text-8xl font-thin mb-8">
               &#10147; {item.title}
             </h2>
                 <div className="aspect-w-12 aspect-h-8 overflow-hidden rounded-2xl relative  shadow-xl">
@@ -68,7 +68,7 @@ export default async function ProjectsPage() {
                 </div>
                 <div className="mt-4">
                   
-                  <p className="mt-1 text-1xl font-semibold line-clamp-3 cinzel-about">
+                  <p className="mt-1 text-1xl md:text-2xl font-semibold line-clamp-3 cinzel-about">
                     {item.description}
                   </p>
                   <div className="border-b border-gray-400 p-4">

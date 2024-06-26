@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        '20vw': '20vw',
+        '30vw': '30vw',
+        '10xl': '8rem',
+        '11xl': '9rem',
+        '12xl': '10rem',
+      },
       
       grayscale: {
         50: '50%',
@@ -28,9 +35,7 @@ const config = {
       },
       colors: {
         fontSize: {
-          '10xl': '8rem',
-          '11xl': '9rem',
-          '12xl': '10rem',
+         
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -33,12 +33,12 @@ export async function FavoriteProjects() {
     <div  className="scroll-end md:p-2">
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
     <div className="flex space-x-8 flex-col mb-24">
-        <h1 className="content text-6xl lg:text-6xl rubik-scribble text-white ml-5 mt-28">
+        <h1 className="content text-6xl lg:text-8xl font-thin text-white ml-5 mt-28">
           Recent Projects
         </h1>
         <div className="mt-8  text-left border-t border-r border-x-white border-y-white">
             <div className=" w-2/3 lg:w-1/2">
-        <p className="noto-sans mt-8 text-gray-300 ">Here are some of my recent projects that showcase my skills and
+        <p className="cinzel-about text-2xl mt-8 text-gray-300 ">Here are some of my recent projects that showcase my skills and
         expertise as a frontend developer.</p></div>
 </div>
       </div>

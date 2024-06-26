@@ -9,6 +9,7 @@ import { HelloText } from "./HelloText";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { Skills } from "./skills";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -50,7 +51,7 @@ export function Hero() {
   }, []);
 
   return (
-    <div className="bg-white max-w-7xl w-full px-12 md:px-4 mx-auto mt-8" >
+    <div className="bg-white max-w-7xl w-full px-12 md:px-4 mx-auto mt-8">
       <div className="grid lg:grid-cols-3  ">
         <title>Shubham Chavan | Portfolio</title>
         <div className="col-span-1 lg:col-span-3  h-full min-h-[500px] lg:min-h-[300px]  mt-4 md:mt-6">
@@ -60,34 +61,22 @@ export function Hero() {
           <div className="mt-4 animate-slide-in-right">
             <h1 className="text-5xl md:text-6xl lg:text-8xl text-black font-thin  ">
               BORN IN THE DIGITAL AGE,{" "}
-              <span className="cinzel-about ">SHUBHAM</span> IS A <p className="cinzel-about">FRONTEND DEVELOPER</p> BASED IN{" "}
+              <span className="cinzel-about ">SHUBHAM</span>&nbsp; IS &nbsp; A{" "}
+              <p className="cinzel-about">FRONTEND DEVELOPER</p> BASED IN{" "}
               <span className="text-orange-500 cinzel-about">MAHARASHTRA</span>,
             </h1>
             <h1 className="text-6xl md:text-7xl lg:text-8xl text-purple-500 cinzel-about ">
               INDIA
             </h1>
           </div>{" "}
-          
-          {/* <h1 className="text-center playfair-display mb-28 text-2xl md:text-2xl lg:text-3xl">
-          <span className={colorMap[text] || "text-gray-400 karla"}>
-            “ {text} ”
-          </span>
-          <span className=""></span>
-        </h1> */}
         </div>
-        {/* <div className="relative overflow-visible">
-      <Image
-        src={myimg}
-        alt="shubham chavan"
-        className="col-span-1 h-[500px] mt-4  object-cover hidden md:block"
-        priority
-      /></div> */}
       </div>
       <div className="max-w-7xl w-full content-end mt-4">
-        <h1 className="text-right font-thin text-4xl md:text-4xl font-small lg:text-5xl">
-          Explore
-        </h1>
+        <h1 className="text-right font-thin text-4xl md:text-4xl font-small lg:text-5xl">Scroll</h1>
         <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
+      </div>
+      <div>
+        
       </div>
     </div>
   );
