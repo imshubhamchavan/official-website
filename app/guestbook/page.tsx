@@ -41,7 +41,7 @@ export default function GuestbookPage() {
       <title>Guestbook|Shubham Chavan</title>
       <div className=" flex flex-col items-center mb-12 text-center  mt-24">
       <h1 className="text-5xl md:text-6xl lg:text-10xl  font-bold">Guestbook</h1>
-      <h1 className=" text-8xl font-thin">Share your <span className="text-purple-500">thoughts </span>& <span className="text-orange-500">suggestions</span></h1>
+      <h1 className="text-2xl md:text-8xl font-thin">Share your <span className="text-purple-500">thoughts </span>& <span className="text-orange-500">suggestions</span></h1>
       </div>
 
       <Card className="mt-10">

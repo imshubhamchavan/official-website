@@ -32,7 +32,7 @@ export default function About() {
         <title>About|Shubham Chavan</title>
 
         {/* hero section */}
-        <div className="flex flex-col items-center mb-12 text-center text-5xl md:text-6xl lg:text-8xl">
+        <div className="flex flex-col items-center mb-12 text-center text-2xl md:text-6xl lg:text-8xl">
           <h1 className="font-thin mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
             GOOD THINGS{" "}
             <Image

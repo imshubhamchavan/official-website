@@ -69,7 +69,7 @@ export default function Hireme() {
           </div>
         </HoverCardContent>
       </HoverCard>
-      <h1 className="absolute bottom-0 z-0 w-full  text-center text-10xl font-extrabold text-gray-200 md:text-8xl lg:text-12xl">
+      <h1 className="absolute bottom-0 z-0 w-full  text-center text-4xl font-extrabold text-gray-200 md:text-8xl lg:text-12xl">
         Hire Me
       </h1>
     </div>

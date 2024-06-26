@@ -7,7 +7,7 @@ export default function Contact() {
         <h1 className="font-thin mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
           LET’S WORK
         </h1>
-        <p className="karla mb-6 text-10xl"> TOGETHER</p>
+        <p className="karla mb-6 text-4xl md:text-10xl"> TOGETHER</p>
       </div>
       <div className="max-w-6xl w-full px-4 md:px-12 mx-auto mb-12">
         <p className="mt-2 text-2xl text-center font-extralight ">

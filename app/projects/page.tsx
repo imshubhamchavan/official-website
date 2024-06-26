@@ -23,7 +23,7 @@ export default async function ProjectsPage() {
   return (
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
-      <section className="flex flex-col items-center mb-12 text-center text-5xl md:text-6xl lg:text-8xl">
+      <section className="flex flex-col items-center mb-12 text-center text-2xl md:text-6xl lg:text-8xl">
         <p className="karla ">Explore</p>
         <h1 className="font-thin  px-8 mb-6 flex items-center justify-center space-x-2">
           my diverse range of projects

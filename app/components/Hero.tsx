@@ -59,7 +59,7 @@ export function Hero() {
             <HelloText />
           </div>
           <div className="mt-4 animate-slide-in-right">
-            <h1 className="text-5xl md:text-6xl lg:text-8xl text-black font-thin  ">
+            <h1 className="text-2xl md:text-6xl lg:text-8xl text-black font-thin  ">
               BORN IN THE DIGITAL AGE,{" "}
               <span className="cinzel-about ">SHUBHAM</span>&nbsp; IS &nbsp; A{" "}
               <p className="cinzel-about">FRONTEND DEVELOPER</p> BASED IN{" "}
