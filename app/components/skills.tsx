@@ -41,6 +41,7 @@ import figmaIcon from "../../public/tech-icons/figma.svg";
 import microIcon from "../../public/tech-icons/micro.svg";
 import vscodeIcon from "../../public/tech-icons/vscode.svg";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const stackIcons = [
@@ -107,12 +108,13 @@ export function Skills() {
 
   return (
     <section className="">
+      
       <div className="panel align-top font-thin about mt-12">
         <div className="about-content flex space-x-2 md:space-x-8 flex-col">
           <h1 className="text-5xl lg:text-10xl  text-center">
             Skills and Technologies
           </h1>
-          <div className="mt-8 text-2xl lg:text-2xl font-extralight text-center">
+          <div className="mt-8 text-1xl lg:text-2xl font-extralight text-center">
             <p className="font-normal text-gray-800 max-w-6xl w-full  px-2 md:px-2 mx-auto">
               Welcome! Take a moment to explore the diverse range of{" "}
               <span className="font-bold">skills</span> and technologies I

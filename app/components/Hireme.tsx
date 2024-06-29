@@ -1,5 +1,5 @@
 
-import { Button } from "@/components/ui/button";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   HoverCard,
@@ -12,6 +12,7 @@ import {
   Link1Icon,
   PersonIcon,
 } from "@radix-ui/react-icons";
+import { Button } from "../../components/ui/moving-border";
 
 
 
@@ -25,16 +26,16 @@ export default function Hireme() {
       </h1>
       <HoverCard>
         <HoverCardTrigger asChild>
+        <a href="mailto:imshubhamchavan@gmail.com">
           <Button
-            variant="outline"
-            className="relative overflow-hidden px-6 py-5 z-10 mt-10 rounded-full text-lg border-black hover:text-white group"
-          >
+           borderRadius="2rem"
+           className="p-4 hover:bg-black hover:text-white bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
+         >
             
             <span className="relative z-10">
-              <a href="mailto:imshubhamchavan@gmail.com">GET IN TOUCH</a>
+              GET IN TOUCH
             </span>
-            <span className="absolute inset-0 bg-black transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-          </Button>
+            </Button></a>
         </HoverCardTrigger>
         <HoverCardContent className="w-80">
           <div className="flex justify-between space-x-4">

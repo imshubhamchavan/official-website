@@ -47,7 +47,8 @@ const socialMedia = [
     icon: github,
     name: "Github",
     username: "@imshubhamchavan",
-    description: "This is where I share my latest coding projects and work. From coding challenges to full-scale applications, there's a variety of projects here that I've been working on.Let's connect ",
+    description:
+      "This is where I share my latest coding projects and work. From coding challenges to full-scale applications, there's a variety of projects here that I've been working on.Let's connect ",
     link: "https://github.com/imshubhamchavan/",
   },
 ];
@@ -73,8 +74,7 @@ export function SectionTwo() {
       <div className="h-28 sm:h-28 border-r border-black mr-2 mt-4"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-12 md:mx-0">
         {socialMedia.map((item) => (
-
-          //social media cards 
+          //social media cards
           <Card key={item.id} className="   border-none shadow-sm group">
             <CardHeader className="grid grid-cols-2 text-left">
               <Image
@@ -94,8 +94,11 @@ export function SectionTwo() {
                 </CardDescription>
               </div>
             </CardHeader>
-            
-            <CardContent style={nameStyles[item.id]} className=" mt-4 font-normal overflow-hidden flex items-center justify-center">
+
+            <CardContent
+              style={nameStyles[item.id]}
+              className=" mt-4 font-normal overflow-hidden flex items-center justify-center"
+            >
               <p>{item.description} </p>
             </CardContent>
             <Button

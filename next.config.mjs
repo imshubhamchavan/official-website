@@ -7,6 +7,11 @@ const nextConfig = {
             protocol: "https",
             port: "",
           },
+          {
+            hostname: "avatars.githubusercontent.com", // Add this to handle GitHub avatar images
+            protocol: "https",
+            port: "",
+          },
         ],
       },
       eslint: {
@@ -20,7 +25,10 @@ const nextConfig = {
         // your project has type errors.
         // !! WARN !!
         ignoreBuildErrors: true
-      }
+      },
+      env: {
+        NEXT_PUBLIC_SANITY_ID: process.env.NEXT_PUBLIC_SANITY_ID,
+      },
 };
 
 export default nextConfig;

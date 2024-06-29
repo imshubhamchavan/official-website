@@ -1,6 +1,7 @@
 import { client } from "../lib/sanity";
 import { ProjectsCard } from "../lib/interface";
 import Image from "next/image";
+import { ContainerScroll } from "../../components/ui/container-scroll-animation";
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) {
@@ -29,13 +30,19 @@ export default async function ProjectsPage() {
           my diverse range of projects
         </h1>
       </section>
-      <div className="bg-purple-500 text-center py-1">
-        <div className="text-1xl lg:text-2xl text-white">
-          {" "}
-          Showcasing my expertise in{" "}
-          <span className="font-bold">web development</span>. Using modern
-          technologies such as <span className="font-bold">Next.js</span>,
-          Tailwind CSS, and more.
+      <div className="bg-purple-500 text-center py-1 word-travel-container">
+        <div className="word-travel">
+          <h1 className="text-1xl lg:text-2xl text-white">
+            Showcasing my expertise in{" "}
+            <span className="font-bold">web development</span>. Proficient in
+            building dynamic web applications using{" "}
+            <span className="font-bold">Next.js</span>,{" "}
+            <span className="font-bold">React.js</span>,{" "}
+            <span className="font-bold">JavaScript</span>,{" "}
+            <span className="font-bold">TypeScript</span>, and styling with{" "}
+            <span className="font-bold">Tailwind CSS</span> and{" "}
+            <span className="font-bold">SCSS</span>.
+          </h1>
         </div>
       </div>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
@@ -55,34 +62,39 @@ export default async function ProjectsPage() {
                 key={item._id}
                 className="group block"
                 target="_blank"
-              ><h2 className="text-2xl md:text-4xl lg:text-8xl font-thin mb-8">
-              &#10147; {item.title}
-            </h2>
-                <div className="aspect-w-12 aspect-h-8 overflow-hidden rounded-2xl relative  shadow-xl">
+              >
+                
+                <ContainerScroll
+                  titleComponent={
+                    <>
+                      <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold mb-8 text-black dark:text-white">
+                      &#10147; {item.title}<br />
+                        <span className=" mt-12 text-1xl md:text-2xl font-normal text-gray-800 line-clamp-3 cinzel-about">
+                        {item.description}
+                        </span>
+                        {item.tags.map((tagItem, index) => (
+                        <span
+                          className=" inline-flex source-code-pro font-semibold items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs sm:text-sm  text-black ring-2 ring-outline ring-white"
+                          key={index}
+                        >
+                          {tagItem}
+                        </span>
+                      ))}
+                      </h1>
+                    </>
+                  }
+                >
                   <Image
                     src={item.imageUrl}
-                    alt="Image Description"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl"
+                    alt="hero"
+                    height={720}
+                    width={1400}
+                    className="mx-auto rounded-2xl object-cover h-full object-left-top mt-12"
+                    draggable={false}
                   />
-                </div>
-                <div className="mt-4">
                   
-                  <p className="mt-1 text-1xl md:text-2xl font-semibold line-clamp-3 cinzel-about">
-                    {item.description}
-                  </p>
-                  <div className="border-b border-gray-400 p-4">
-                  <div className="mt-3 flex flex-wrap gap-2 ">
-                    {item.tags.map((tagItem, index) => (
-                      <span
-                        className=" inline-flex source-code-pro font-semibold items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs sm:text-sm  text-purple-500 ring-2 ring-outline ring-white"
-                        key={index}
-                      >
-                        {tagItem}
-                      </span>
-                    ))}
-                  </div></div>
-                </div>
+                </ContainerScroll>
+               
               </a>
             ))}
           </div>

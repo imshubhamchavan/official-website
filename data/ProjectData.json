@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": " Portfolio-boilerplate",
+      "github_url": "https://github.com/shubhamzone",
+      "project_url": "https://shubhamzone.netlify.app/",
+      "description": "Portfolio site, built with modern web technologies. The core of the site is developed with React.js for a dynamic and responsive user interface, styled with SCSS for consistent and scalable design. React Router provides smooth, single-page application navigation, while Redux ensures predictable and maintainable state management. Email.js",
+      "image_url": "../public/me2.jpg"
+    }
+  ]
+}

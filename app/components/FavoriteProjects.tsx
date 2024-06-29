@@ -4,7 +4,8 @@ import { client } from "../lib/sanity";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import Hireme from "./Hireme";
+
+
 
 
 

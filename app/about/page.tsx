@@ -1,15 +1,54 @@
 "use client";
 import Image from "next/image";
 import myimg from "../../public/me2.jpg";
+import aboutimg from "../../public/aboutimg.jpg";
 import Experience from "../components/experience";
 import Certificates from "../components/Certificates";
 import logo from "../../public/shubhazone-logo.png";
+import { StickyScroll } from "../../components/ui/sticky-scroll-reveal";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { HelloText } from "../components/HelloText";
+
+// sticky scroll reveal data
+
+const content = [
+  {
+    title: "Basic Information -",
+    description:
+      "Shubham Chavan is a dedicated and innovative web developer based in India 🇮🇳. He specializes in crafting sophisticated web applications using Next.js and React.js, focusing on creating seamless user experiences and efficient, scalable codebases. His expertise spans front-end development, component-based architecture, and performance optimization, ensuring high-quality web solutions.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src={myimg}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Journey Starts-",
+    description:
+      "Shubham Chavan embarked on his journey by earning a Bachelor's Degree in Computer Science from the University of Amravati, graduating in 2019 with a strong foundation in programming and software development. During his undergraduate studies, he honed his skills in coding and discovered a passion for creating impactful software solutions. This educational background equipped him with the knowledge and expertise to excel in web development, particularly in leveraging technologies like Next.js and React.js to build sophisticated and user-centric applications.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src={aboutimg}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+];
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -48,11 +87,14 @@ export default function About() {
 
         {/* about section */}
 
-        <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
+        <div className=" w-full mx-auto mt-14">
           <h1 className="text-right text-4xl md:text-4xl font-small lg:text-5xl">
             About
           </h1>
           <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
+
+          
+
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-14">
             <Image
               src={myimg}
@@ -138,6 +180,9 @@ export default function About() {
           </div>
         </div>
       </div>
+      {/* <div className="w-full">
+            <StickyScroll content={content} />
+          </div> */}
       <div className="w-full bg-black">
         <Experience />
         <Certificates />
