@@ -31,7 +31,7 @@ export async function FavoriteProjects() {
 
   console.log(data);
   return (
-    <div  className="scroll-end md:p-2">
+    <div  className="scroll-end md:p-2 bg-black">
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
     <div className="flex space-x-8 flex-col mb-24">
         <h1 className="content text-6xl lg:text-8xl font-thin text-white ml-5 mt-28">

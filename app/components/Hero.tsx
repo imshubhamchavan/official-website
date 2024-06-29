@@ -25,7 +25,7 @@ const words = [
 
 export function Hero() {
   return (
-    <div className="bg-white  w-full px-12 md:px-4 mx-auto mt-8">
+    <div className="bg-white  mx-auto mt-8">
       <HeroHighlight>
         <div className="animate-slide-in ">
           <FlipWords words={words} />
@@ -43,7 +43,7 @@ export function Hero() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="col-span-1 lg:col-span-3  h-full min-h-[500px] lg:min-h-[300px]  mt-4 md:mt-6"
+          className=" h-full min-h-[400px] lg:min-h-[300px]  mt-4 md:mt-6"
         >
           <div className="text-4xl md:text-6xl lg:text-8xl text-black font-thin  ">
             <p className=" animate-slide-in-right">BORN IN THE DIGITAL AGE, </p>

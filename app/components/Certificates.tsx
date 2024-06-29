@@ -10,9 +10,11 @@ export default function Certificates() {
     
     <div className=" relative overflow-hidden bg-white flex flex-col items-center">
       <div className="grid space-x-4 "></div>
-      <h1 className="text-4xl sm:text-3xl lg:text-8xl text-gray-800 font-semibold mt-24 mb-20">
-        CERTIFICATES
-      </h1>
+      
+      <h1 className="text-4xl sm:text-3xl lg:text-9xl text-purple-500 font-thin mt-24 mb-20">
+      CERTIFICATES
+        </h1>
+        <div className="mt-8  text-left border-t border-r border-x-black border-y-black"><div className=" w-2/3 lg:w-1/2"></div></div>
 
       <CardContainer className="inter-var">
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
