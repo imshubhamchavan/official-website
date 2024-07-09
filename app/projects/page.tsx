@@ -42,7 +42,9 @@ export default async function ProjectsPage() {
             <span className="font-bold">TypeScript</span>, and styling with{" "}
             <span className="font-bold">Tailwind CSS</span> and{" "}
             <span className="font-bold">SCSS</span>.
+            
           </h1>
+          
         </div>
       </div>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
@@ -54,8 +56,8 @@ export default async function ProjectsPage() {
         </h1>
         <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
         <p className=" noto-sans text-gray-500 mb-4 text-center"></p>
-        <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
-          <div className="py-12 grid md:grid-cols-1 gap-16 md:gap-8 lg:gap-28 grid-cols-1 ">
+        <section className=" w-full  mx-auto">
+          <div className=" grid md:grid-cols-1 gap-16 md:gap-8 lg:gap-28 grid-cols-1 ">
             {data.map((item) => (
               <a
                 href={item.link}
@@ -67,7 +69,7 @@ export default async function ProjectsPage() {
                 <ContainerScroll
                   titleComponent={
                     <>
-                      <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold mb-8 text-black dark:text-white">
+                      <h1 className="cinzel-about text-left text-2xl md:text-4xl lg:text-8xl font-thin mb-8 text-black dark:text-white">
                       &#10147; {item.title}<br />
                         <span className=" mt-12 text-1xl md:text-2xl font-normal text-gray-800 line-clamp-3 cinzel-about">
                         {item.description}

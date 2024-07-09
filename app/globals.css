@@ -61,7 +61,7 @@
 
 .word-travel {
   display: inline-block;
-  animation: travel 25s linear infinite; /* Animation definition */
+  animation: travel 18s linear infinite; /* Animation definition */
   white-space: nowrap; /* Ensures text doesn't wrap */
 }
 
