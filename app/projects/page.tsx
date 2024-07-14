@@ -2,6 +2,7 @@ import { client } from "../lib/sanity";
 import { ProjectsCard } from "../lib/interface";
 import Image from "next/image";
 import { ContainerScroll } from "../../components/ui/container-scroll-animation";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 async function getData() {
   const query = `*[_type == 'project'] | order(_createdAt desc) {
@@ -30,8 +31,16 @@ export default async function ProjectsPage() {
           my diverse range of projects
         </h1>
       </section>
-      <div className="bg-purple-500 text-center py-1 word-travel-container">
-        <div className="word-travel">
+      <div className="tilt-left">
+      <VelocityScroll
+      text="   Showcasing my expertise in web development. Proficient in
+            building dynamic web applications using Next.js, React.js, Javasript, Typescript etc..."
+      default_velocity={2}
+      className="bg-purple-400 font-display text-center font-normal text-2xl tracking-[-0.02em] drop-shadow-sm text-white dark:text-white md:text-3xl md:leading-[5rem]"
+    />
+
+      
+        {/* <div className="word-travel">
           <h1 className="text-1xl lg:text-2xl text-white">
             Showcasing my expertise in{" "}
             <span className="font-bold">web development</span>. Proficient in
@@ -45,7 +54,7 @@ export default async function ProjectsPage() {
             
           </h1>
           
-        </div>
+        </div> */}
       </div>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
         <h1 className="text-right text-4xl md:text-4xl rubik-scribble-thin  lg:text-5xl">

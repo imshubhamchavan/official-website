@@ -93,7 +93,7 @@ export function Navbar() {
           <a href="/contact">
             <Button
               borderRadius="2rem"
-              className="hidden sm:flex bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
+              className="hidden md:flex bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
             >
               <span className="relative text-1xl z-10">
                 

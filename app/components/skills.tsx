@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon } from "@radix-ui/react-icons";
+
 import {
   Card,
   CardContent,
@@ -40,7 +41,42 @@ import chromeIcon from "../../public/tech-icons/chrome.svg";
 import figmaIcon from "../../public/tech-icons/figma.svg";
 import microIcon from "../../public/tech-icons/micro.svg";
 import vscodeIcon from "../../public/tech-icons/vscode.svg";
+import { Tools } from "./Tools";
+import IconCloud from "@/components/magicui/icon-cloud";
+import FlipCard from "@/components/animata/card/flip-card";
 
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,248 +144,266 @@ export function Skills() {
 
   return (
     <section className="">
-      
       <div className="panel align-top font-thin about mt-12">
         <div className="about-content flex space-x-2 md:space-x-8 flex-col">
           <h1 className="text-5xl lg:text-10xl  text-center">
             Skills and Technologies
           </h1>
           <div className="mt-8 text-1xl lg:text-2xl font-extralight text-center">
-            <p className="font-normal text-gray-800 max-w-6xl w-full  px-2 md:px-2 mx-auto">
+            {/* <p className="font-normal text-gray-800 max-w-6xl w-full  px-2 md:px-2 mx-auto">
               Welcome! Take a moment to explore the diverse range of{" "}
               <span className="font-bold">skills</span> and technologies I
               utilize. From cutting-edge web technologies and frameworks to
               essential design tools and{" "}
               <span className="font-bold">programming languages.</span>
-            </p>
+            </p> */}
           </div>
         </div>
 
         {/* Skills sections */}
-        <div className="mt-12 md:mt-24">
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
-            {/* Languages & Markup */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  Languages & Markup
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {languagesMarkup.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+        <div className="mt-8 md:mt-4 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+            <div>
+              {" "}
+              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+                <IconCloud iconSlugs={slugs} />
+              </div>
+            </div>
 
-            {/* Frontend Frameworks & Libraries */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  Frameworks & Libraries
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {frontendFrameworks.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+            <div className="col-span-2">
+              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
+                {/* <FlipCard
+                  description="I am a full-stack developer with a passion for building beautiful and functional applications."
+                  image="https://images.unsplash.com/photo-1717966313670-a42f6908be92?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  rotate="y"
+                  subtitle="Software Engineer"
+                  title="Languages & Markup"
+                /> */}
 
-            {/* State Management */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  State Management
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {stateManagement.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+                {/* Languages & Markup */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      Languages & Markup
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {languagesMarkup.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
 
-            {/* Styling */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  Styling
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {styling.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+                {/* Frontend Frameworks & Libraries */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      Frameworks & Libraries
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {frontendFrameworks.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
 
-            {/* backendDatabases  */}
+                {/* State Management */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      State Management
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {stateManagement.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
 
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  {" "}
-                  Backend & Databases{" "}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {backendDatabases.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+                {/* Styling */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      Styling
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {styling.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
 
-            {/* apisServices */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  {" "}
-                  Api Services{" "}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {apisServices.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+                {/* backendDatabases  */}
 
-            {/* testing */}
-            <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
-              <CardHeader>
-                <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
-                  Testing
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                {testing.map((tech, index) => (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) {
-                        iconsRef.current[index] = el;
-                      }
-                    }}
-                    className="group relative icons"
-                  >
-                    <Image
-                      src={tech.icon}
-                      alt={`${tech.name} Icon`}
-                      className="w-12 h-12 md:w-16 md:h-16 group-hover:scale-110"
-                    />
-                    <span className="text-xs text-center block mt-1">
-                      {tech.name}
-                    </span>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      {" "}
+                      Backend & Databases{" "}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {backendDatabases.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-10 md:h-10 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+
+                {/* apisServices */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      {" "}
+                      Api Services{" "}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {apisServices.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+
+                {/* testing */}
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                      Testing
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {testing.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
-        <Card className="border-none">
+        {/* <Card className="border-none">
           <CardHeader className="mb-4">
             <CardTitle className="justify-center text-center text-1xl text-black font-normal cinzel-about cinzel-about"></CardTitle>
           </CardHeader>
@@ -359,14 +413,15 @@ export function Skills() {
                 <Image
                   src={item}
                   alt="Icon"
-                  className="icons w-14 h-14 md:w-16 md:h-16 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                  className="icons w-14 h-14 md:w-12 md:h-12 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                 />
 
               </div>
             ))}
           </CardContent>
             <h1 className="font-semibold text-gray-700 text-center">Tools i use daily</h1>
-        </Card>
+        </Card> */}
+        <Tools />
         <div className="relative flex justify-center mt-12 md:mt-24">
           <Link href="https://flowcv.com/resume/ssw2v8kt0u" passHref>
             <Button

@@ -108,6 +108,12 @@
   font-style: normal;
 }
 
+.tilt-left {
+  transform: rotate(-1.5deg); /* Adjust the degree to your preference */
+}
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
 .noto-sans-mono {
   font-family: "Noto Sans Mono", monospace;

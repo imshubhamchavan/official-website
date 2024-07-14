@@ -21,7 +21,7 @@ export default function Hireme() {
     <div className="relative white h-screen flex flex-col items-center justify-center ">
       <div className="flex space-x-4"></div>
       
-      <h1 className="text-4xl sm:text-3xl lg:text-8xl font-thin mt-8 mb-20">
+      <h1 className="text-center lg:text-left text-4xl sm:text-3xl lg:text-8xl font-thin mt-8 mb-20">
         Looking for a Frontend Developer?
       </h1>
       <HoverCard>

@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../../components/ui/hero-highlight";
+import SparklesText from "@/components/magicui/sparkles-text";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const words = [
@@ -25,7 +26,7 @@ const words = [
 
 export function Hero() {
   return (
-    <div className="bg-white  mx-auto mt-8">
+    <div className="bg-white  mx-auto mt-8 ml-4  text-center lg:text-left">
       <HeroHighlight>
         <div className="animate-slide-in ">
           <FlipWords words={words} />
@@ -48,20 +49,21 @@ export function Hero() {
           <div className="text-4xl md:text-6xl lg:text-8xl text-black font-thin  ">
             <p className=" animate-slide-in-right">BORN IN THE DIGITAL AGE, </p>
             <p className=" animate-slide-in">
+              
               <span className="cinzel-about "> SHUBHAM &nbsp;</span>{" "}
               <span className="font-thin">IS &nbsp; A </span>
             </p>
-            <Highlight className="text-black dark:text-white ">
+            <Highlight className="text-white dark:text-white ">
               FRONTEND DEVELOPER,
             </Highlight>
 
-            <p className=" animate-slide-in">
+            <p className=" animate-slide-in mt-2">
               BASED IN{" "}
-              <span className="text-orange-500 cinzel-about ">MAHARASHTRA</span>
-            </p>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl text-purple-500 cinzel-about  animate-slide-in-right">
+              {/* <span className="text-orange-500 cinzel-about ">MAHARASHTRA</span> */}
+            <span className="text-4xl md:text-6xl lg:text-8xl text-purple-500 cinzel-about  animate-slide-in-right">
               INDIA
-            </h1>
+            </span>
+            </p>
           </div>
         </motion.h1>
       </HeroHighlight>
