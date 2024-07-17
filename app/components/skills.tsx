@@ -146,17 +146,17 @@ export function Skills() {
     <section className="">
       <div className="panel align-top font-thin about mt-12">
         <div className="about-content flex space-x-2 md:space-x-8 flex-col">
-          <h1 className="text-5xl lg:text-10xl  text-center">
+          <h1 className="text-5xl lg:text-10xl ribes text-center">
             Skills and Technologies
           </h1>
-          <div className="mt-8 text-1xl lg:text-2xl font-extralight text-center">
-            {/* <p className="font-normal text-gray-800 max-w-6xl w-full  px-2 md:px-2 mx-auto">
+          <div className="mt-4 mb-12 text-1xl lg:text-2xl font-extralight text-center">
+            <p className="font-normal text-gray-800 max-w-6xl w-full ribes-mono px-2 md:px-2 mx-auto">
               Welcome! Take a moment to explore the diverse range of{" "}
-              <span className="font-bold">skills</span> and technologies I
-              utilize. From cutting-edge web technologies and frameworks to
+              <span className="ribes-bold">skills</span> and technologies I
+              utilize. From cutting-edge web <span className="ribes-bold">technologies </span>and frameworks to
               essential design tools and{" "}
-              <span className="font-bold">programming languages.</span>
-            </p> */}
+              programming languages.
+            </p> 
           </div>
         </div>
 
@@ -165,7 +165,7 @@ export function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             <div>
               {" "}
-              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-8 pb-20 pt-8 ">
+              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-12 pb-20 pt-8 ">
                 <IconCloud iconSlugs={slugs} />
               </div>
             </div>
@@ -176,7 +176,7 @@ export function Skills() {
                 {/* Languages & Markup */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl ribes-mono text-black  mb-4">
                       Languages & Markup
                     </CardTitle>
                   </CardHeader>
@@ -207,7 +207,7 @@ export function Skills() {
                 {/* Frontend Frameworks & Libraries */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Frameworks & Libraries
                     </CardTitle>
                   </CardHeader>
@@ -238,7 +238,7 @@ export function Skills() {
                 {/* State Management */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       State Management
                     </CardTitle>
                   </CardHeader>
@@ -269,7 +269,7 @@ export function Skills() {
                 {/* Styling */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Styling
                     </CardTitle>
                   </CardHeader>
@@ -301,7 +301,7 @@ export function Skills() {
 
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
                       Backend & Databases{" "}
                     </CardTitle>
@@ -333,7 +333,7 @@ export function Skills() {
                 {/* apisServices */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
                       Api Services{" "}
                     </CardTitle>
@@ -365,7 +365,7 @@ export function Skills() {
                 {/* testing */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Testing
                     </CardTitle>
                   </CardHeader>
@@ -396,24 +396,6 @@ export function Skills() {
             </div>
           </div>
         </div>
-        {/* <Card className="border-none">
-          <CardHeader className="mb-4">
-            <CardTitle className="justify-center text-center text-1xl text-black font-normal cinzel-about cinzel-about"></CardTitle>
-          </CardHeader>
-          <CardContent className="flex flex-wrap justify-center items-center gap-8">
-            {stackIcons.map((item, index) => (
-              <div key={index} className="group relative">
-                <Image
-                  src={item}
-                  alt="Icon"
-                  className="icons w-14 h-14 md:w-12 md:h-12 object-contain transition-transform duration-300 ease-in-out transform group-hover:scale-110"
-                />
-
-              </div>
-            ))}
-          </CardContent>
-            <h1 className="font-semibold text-gray-700 text-center">Tools i use daily</h1>
-        </Card> */}
         <Tools />
         <div className="relative flex justify-center mt-12 md:mt-24">
           <Link href="https://flowcv.com/resume/ssw2v8kt0u" passHref>
@@ -423,7 +405,7 @@ export function Skills() {
               rel="noopener noreferrer"
               title="Download Resume"
             >
-              <span className="relative z-10 flex items-center group-hover:text-white">
+              <span className="relative z-10 flex items-center ribes group-hover:text-white">
                 Download Resume <DownloadIcon className="ml-2" />
               </span>
               <span className="absolute inset-0 bg-red-600  transition-all duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>

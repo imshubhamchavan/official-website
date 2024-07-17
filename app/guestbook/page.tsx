@@ -40,8 +40,8 @@ export default function GuestbookPage() {
     <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
       <title>Guestbook|Shubham Chavan</title>
       <div className=" flex flex-col items-center mb-12 text-center  mt-24">
-      <h1 className="text-5xl md:text-6xl lg:text-10xl  font-bold">Guestbook</h1>
-      <h1 className="text-4xl md:text-8xl font-thin">Share your <span className="text-purple-500">thoughts </span>& <span className="text-orange-500">suggestions</span></h1>
+      <h1 className="text-5xl md:text-6xl lg:text-12xl ribes mb-8">Guestbook</h1>
+      <h1 className="text-4xl md:text-6xl font-semibold"><span className="ribes-mono"> Share your </span><span className="text-purple-500">thoughts </span>& <span className="text-orange-500">suggestions</span></h1>
       </div>
 
       <Card className="mt-10">

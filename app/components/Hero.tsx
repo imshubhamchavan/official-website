@@ -46,20 +46,20 @@ export function Hero() {
           }}
           className=" h-full min-h-[400px] lg:min-h-[300px]  mt-4 md:mt-6"
         >
-          <div className="text-4xl md:text-6xl lg:text-8xl text-black ribes  ">
-            <p className=" animate-slide-in-right font-thin">BORN IN THE DIGITAL AGE, </p>
-            <p className=" animate-slide-in">
-              <span className="cinzel-about "> SHUBHAM &nbsp;</span>{" "}
-              <span className="font-thin">IS &nbsp; A </span>
+          <div className="text-4xl md:text-6xl lg:text-8xl text-gray-900">
+            <p className=" animate-slide-in-right  ribes-mono">BORN IN THE DIGITAL AGE, </p>
+            <p className=" animate-slide-in mb-4 ">
+              <span className="font-semibold text-purple-500"> SHUBHAM &nbsp;</span>{" "}
+              <span className="font-thin  ribes-mono">IS &nbsp; A </span>
             </p>
-            <Highlight className="text-white dark:text-white ">
-              FRONTEND DEVELOPER,
+            <Highlight className="text-white dark:text-white  ribes-mono">
+              FRONTEND DEVELOPER
             </Highlight>
 
-            <p className=" animate-slide-in mt-2">
-              BASED IN{" "}
+            <p className=" animate-slide-in mt-4 ">
+             <span className="ribes-mono"> BASED IN{" "}</span>
               {/* <span className="text-orange-500 cinzel-about ">MAHARASHTRA</span> */}
-            <span className="text-4xl md:text-6xl lg:text-8xl text-purple-500 cinzel-about  animate-slide-in-right">
+            <span className="text-4xl md:text-6xl lg:text-8xl  font-semibold animate-slide-in-right">
               INDIA
             </span>
             </p>
@@ -67,7 +67,7 @@ export function Hero() {
         </motion.h1>
       </HeroHighlight>
           <div className="max-w-7xl w-full content-end mt-4">
-            <h1 className="text-right font-thin text-4xl md:text-4xl font-small lg:text-5xl">
+            <h1 className="text-right font-thin text-4xl md:text-4xl font-small ribes-mono lg:text-5xl">
               Scroll
             </h1>
             <div className="h-28 sm:h-48 border-r border-black mt-4"></div>

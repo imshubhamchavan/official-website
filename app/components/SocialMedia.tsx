@@ -49,7 +49,7 @@ const socialMedia = [
 export function SocialMedia() {
   return (
     <div className="max-w-7xl w-full  md:px-8 mx-auto mt-14">
-      <h1 className="text-right text-4xl md:text-4xl rubik-scribble-thin  lg:text-5xl">
+      <h1 className="text-right text-4xl md:text-4xl ribes-mono  lg:text-5xl">
         Follow
       </h1>
       <h2 className="text-right text-4xl md:text-4xl cinzel lg:text-5xl">
@@ -65,26 +65,26 @@ export function SocialMedia() {
                   <Image
                     src={social.icon}
                     alt={`${social.name} icon`}
-                    height={100}
-                    width={100}
+                    height={120}
+                    width={120}
                   />
                 </div>
                 <a href={social.link}>
                 <div className="flex-1">
-                  <h1 className="font-bold text-base text-black">
+                  <h1 className=" text-xl ribes-bold text-black">
                     {social.name}
                   </h1>
-                  <h2 className="font-thin rubik text-gray-400">
+                  <h2 className="font-light ribes-mono text-gray-500">
                     {social.username}
                   </h2>
-                  <p className="text-base text-slate-800 mt-4">
+                  <p className="text-xl ribes-mono mt-4">
                     {social.description}
                   </p>
                 </div>
               </a>
               </div>
               <a href={social.link}>
-                <Button className="mt-2 w-full bg-white border border-black text-black">Visit {social.name}</Button>
+                <Button className="mt-2 w-full ribes text-2xl bg-white border border-black text-black">Visit {social.name}</Button>
                 </a>
             
             </PinContainer>

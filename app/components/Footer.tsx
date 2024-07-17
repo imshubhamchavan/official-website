@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="my-12 text-center">
+    <footer className="my-12 text-center ribes">
        <ul className="flex flex-wrap justify-center mb-4">
         {navigationItems.map((item, index) => (
           <div key={index} className="px-5 py-2">

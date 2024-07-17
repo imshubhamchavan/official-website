@@ -25,9 +25,9 @@ export default async function ProjectsPage() {
   return (
     <div className="mt-20">
       <title>Projects|Shubham Chavan</title>
-      <section className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
-        <p className="karla ">Explore</p>
-        <h1 className="font-thin  px-8 mb-6 flex items-center justify-center space-x-2">
+      <section className="flex flex-col items-center mb-12 text-center ">
+        <p className="ribes text-4xl md:text-6xl lg:text-12xl">Explore</p>
+        <h1 className="ribes-mono mt-4 text-4xl md:text-6xl px-8 mb-6 flex items-center justify-center space-x-2">
           my diverse range of projects
         </h1>
       </section>
@@ -36,28 +36,12 @@ export default async function ProjectsPage() {
       text="   Showcasing my expertise in web development. Proficient in
             building dynamic web applications using Next.js, React.js, Javasript, Typescript etc..."
       default_velocity={2}
-      className="bg-purple-400 font-display text-center font-normal text-2xl tracking-[-0.02em] drop-shadow-sm text-white dark:text-white md:text-3xl md:leading-[5rem]"
+      className="bg-purple-400 font-display text-center ribes-mono text-2xl tracking-[-0.02em] drop-shadow-sm text-white dark:text-white md:text-3xl md:leading-[5rem]"
     />
 
-      
-        {/* <div className="word-travel">
-          <h1 className="text-1xl lg:text-2xl text-white">
-            Showcasing my expertise in{" "}
-            <span className="font-bold">web development</span>. Proficient in
-            building dynamic web applications using{" "}
-            <span className="font-bold">Next.js</span>,{" "}
-            <span className="font-bold">React.js</span>,{" "}
-            <span className="font-bold">JavaScript</span>,{" "}
-            <span className="font-bold">TypeScript</span>, and styling with{" "}
-            <span className="font-bold">Tailwind CSS</span> and{" "}
-            <span className="font-bold">SCSS</span>.
-            
-          </h1>
-          
-        </div> */}
       </div>
       <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
-        <h1 className="text-right text-4xl md:text-4xl rubik-scribble-thin  lg:text-5xl">
+        <h1 className="text-right text-4xl md:text-4xl ribes-mono  lg:text-5xl">
           Selected
         </h1>
         <h1 className="text-right text-4xl md:text-4xl cinzel lg:text-5xl">
@@ -78,9 +62,9 @@ export default async function ProjectsPage() {
                 <ContainerScroll
                   titleComponent={
                     <>
-                      <h1 className="cinzel-about text-left text-2xl md:text-4xl lg:text-8xl font-thin mb-8 text-black dark:text-white">
-                      &#10147; {item.title}<br />
-                        <span className=" mt-12 text-1xl md:text-2xl font-normal text-gray-800 line-clamp-3 cinzel-about">
+                      <h1 className="ribes text-left text-2xl md:text-4xl lg:text-8xl font-thin mb-8 text-black dark:text-white">
+                      {item.title}<br />
+                        <span className=" mt-12 text-1xl md:text-2xl font-normal text-gray-800 line-clamp-3 ribes-mono">
                         {item.description}
                         </span>
                         {item.tags.map((tagItem, index) => (

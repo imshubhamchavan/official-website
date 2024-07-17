@@ -11,7 +11,7 @@ export function Tools() {
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
-      <CardTitle className="text-center cinzel-about">Tools i use daily</CardTitle>
+      <CardTitle className="text-center ribes-bold text-2xl">Tools i use daily</CardTitle>
       {/* <CardDescription>
        
       </CardDescription> */}

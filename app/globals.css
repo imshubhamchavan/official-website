@@ -57,14 +57,32 @@
 @font-face {
   font-family: 'Ribes';
   src: url('/public/fonts/Ribes-Regular.woff2') format('woff2'),
-       url('/public/fonts/Ribes-Regular.woff') format('woff'),;
-  font-weight: 400; /* Regular weight */
-  font-style: normal;
+       url('/public/fonts/Ribes-Regular.woff') format('woff'),
+       url('/public/fonts/Ribes-Black.woff2') format('woff2'),
+       url('/public/fonts/Ribes-Black.woff') format('woff'),
+       url('/public/fonts/Ribes-Light.woff2') format('woff2'),  /* Add Light weight with woff2 format */
+       url('/public/fonts/Ribes-Light.woff') format('woff');
+  
 }
 
 .ribes {
   font-family: "Ribes", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 500; /* Regular weight */
+  font-style: normal;
+}
+
+.ribes-bold {
+  font-family: "Ribes", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800; /* Regular weight */
+  font-style: bold;
+}
+.ribes-mono {
+  font-family: "ribes", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: light;
 }
 
 

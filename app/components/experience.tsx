@@ -1,11 +1,11 @@
 export default function Experience() {
   return (
     <div className="flex flex-col p-4 md:p-2">
-      <h1 className="text-6xl lg:text-6xl rubik-scribble text-white mt-28 md:ml-12">
+      <h1 className="text-6xl lg:text-7xl ribes text-white mt-28 md:ml-12">
         Professional Experience
       </h1>
       <div className="mt-4 w-2/3 lg:w-1/2 text-left md:ml-12">
-        <p className="noto-sans text-gray-300 font-bold">
+        <p className="ribes-mono text-gray-300 font-bold">
           Take a look at my professional journey.
         </p>
       </div>

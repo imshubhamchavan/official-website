@@ -11,7 +11,7 @@ export default function Certificates() {
     <div className=" relative overflow-hidden bg-white flex flex-col items-center">
       <div className="grid space-x-4 "></div>
       
-      <h1 className="text-4xl sm:text-3xl lg:text-9xl font-thin mt-24 mb-20">
+      <h1 className="text-4xl sm:text-3xl lg:text-9xl ribes mt-24 mb-20">
       CERTIFICATES
         </h1>
         <div className="mt-8  text-left border-t border-r border-x-black border-y-black"><div className=" w-2/3 lg:w-1/2"></div></div>

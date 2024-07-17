@@ -34,12 +34,12 @@ export async function FavoriteProjects() {
     <div  className="scroll-end md:p-2 bg-black">
     <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-8 mb-8">
     <div className="flex space-x-8 flex-col mb-24">
-        <h1 className="content text-6xl lg:text-8xl font-thin text-white ml-5 mt-28">
+        <h1 className="content text-6xl lg:text-8xl ribes text-white ml-5 mt-28">
           Recent Projects
         </h1>
         <div className="mt-8  text-left border-t border-r border-x-white border-y-white">
             <div className=" w-2/3 lg:w-1/2">
-        <p className="cinzel-about text-2xl mt-8 text-gray-300 ">Here are some of my recent projects that showcase my skills and
+        <p className="ribes-mono text-2xl mt-8 text-gray-300 ">Here are some of my recent projects that showcase my skills and
         expertise as a frontend developer.</p></div>
 </div>
       </div>
@@ -51,7 +51,7 @@ export async function FavoriteProjects() {
               className="group block"
               target="_blank"
             >
-              <h2 className="text-2xl md:text-4xl lg:text-4xl font-thin  text-gray-100 mb-8">
+              <h2 className="text-2xl md:text-4xl lg:text-4xl ribes  text-gray-100 mb-8">
               &#10147; {item.title}
                 </h2>
               <div className="aspect-w-12 aspect-h-8 overflow-hidden rounded-2xl relative  shadow-xl">
@@ -65,7 +65,7 @@ export async function FavoriteProjects() {
               </div>
               <div className="mt-4">
                 
-                <p className="mt-1 text-gray-400 line-clamp-3 cinzel-about mb-6">
+                <p className="mt-1 text-gray-400 line-clamp-3 ribes-mono mb-6">
                   {item.description}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ export async function FavoriteProjects() {
           
           <ChevronRightIcon className="h-4 w-4" />
         </Button></Link>
-        <h2 className="text-gray-500 font-normal mt-6 mb-8">take a look at my other projects</h2>
+        <h2 className="text-gray-200 font-normal ribes text-2xl mt-6 mb-8">take a look at my other projects</h2>
       </div>
     </div>
     </div>

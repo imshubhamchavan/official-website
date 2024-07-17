@@ -72,7 +72,7 @@ export default function About() {
 
         {/* hero section */}
         <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
-          <h1 className="font-thin mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
+          <h1 className="ribes-mono mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
             GOOD THINGS{" "}
             <Image
               src={logo}
@@ -81,14 +81,14 @@ export default function About() {
             />
             HAPPEN
           </h1>
-          <p className="karla mb-6">WHEN YOU SAY</p>
+          <p className="font-semibold mb-6">WHEN YOU SAY</p>
           <HelloText />
         </div>
 
         {/* about section */}
 
         <div className=" w-full mx-auto mt-14">
-          <h1 className="text-right text-4xl md:text-4xl font-small lg:text-5xl">
+          <h1 className="text-right text-4xl md:text-4xl ribes-mono lg:text-5xl">
             About
           </h1>
           <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
@@ -110,10 +110,10 @@ export default function About() {
 
                   <div className="content ">
                     <div className="key-point ">
-                      <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble text-gray-800">
+                      <h3 className="mb-2 text-2xl lg:text-3xl ribes text-gray-800">
                         Basic Information -
                       </h3>
-                      <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-700">
+                      <p className="text-lg ribes-mono text-1xl lg:text-1xl text-gray-700">
                         <span className="font-extrabold  text-purple-500">
                           Shubham Chavan{" "}
                         </span>
@@ -130,10 +130,10 @@ export default function About() {
                     <br />
 
                     <div className="key-point ">
-                      <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble text-gray-800">
+                      <h3 className="mb-2 text-2xl lg:text-3xl ribes text-gray-800">
                         Journey Starts-
                       </h3>
-                      <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-700">
+                      <p className="text-lg ribes-mono text-1xl lg:text-1xl text-gray-700">
                         Shubham’s journey began with a Bachelor’s Degree in
                         <span className="font-extrabold  text-purple-500">
                           {" "}
@@ -151,10 +151,10 @@ export default function About() {
                     <br />
 
                     <div className="key-point">
-                      <h3 className="mb-2 text-2xl lg:text-3xl rubik-scribble text-gray-800">
+                      <h3 className="mb-2 text-2xl lg:text-3xl ribes text-gray-800">
                         Expertise-
                       </h3>
-                      <p className="text-lg noto-sans text-1xl lg:text-1xl text-gray-700">
+                      <p className="text-lg ribes-mono text-1xl lg:text-1xl text-gray-700">
                         Shubham’s expertise lies in crafting responsive and
                         scalable web applications using cutting-edge
                         technologies. He favors
