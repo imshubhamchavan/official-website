@@ -54,6 +54,21 @@
   }
 }
 
+@font-face {
+  font-family: 'Ribes';
+  src: url('/public/fonts/Ribes-Regular.woff2') format('woff2'),
+       url('/public/fonts/Ribes-Regular.woff') format('woff'),;
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+.ribes {
+  font-family: "Ribes", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
 .word-travel-container {
   overflow: hidden; /* Ensures the container hides the overflowed text */
   white-space: nowrap; /* Prevents the text from wrapping */

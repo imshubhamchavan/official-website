@@ -46,7 +46,7 @@ export function Hero() {
           }}
           className=" h-full min-h-[400px] lg:min-h-[300px]  mt-4 md:mt-6"
         >
-          <div className="text-4xl md:text-6xl lg:text-8xl text-black font-thin  ">
+          <div className="text-4xl md:text-6xl lg:text-8xl text-black ribes  ">
             <p className=" animate-slide-in-right font-thin">BORN IN THE DIGITAL AGE, </p>
             <p className=" animate-slide-in">
               <span className="cinzel-about "> SHUBHAM &nbsp;</span>{" "}
