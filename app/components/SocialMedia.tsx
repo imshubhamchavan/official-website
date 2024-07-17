@@ -48,7 +48,7 @@ const socialMedia = [
 
 export function SocialMedia() {
   return (
-    <div className="max-w-7xl w-full px-4 md:px-8 mx-auto mt-14">
+    <div className="max-w-7xl w-full  md:px-8 mx-auto mt-14">
       <h1 className="text-right text-4xl md:text-4xl rubik-scribble-thin  lg:text-5xl">
         Follow
       </h1>
@@ -56,7 +56,7 @@ export function SocialMedia() {
         Me On
       </h2>
       <div className="h-28 sm:h-28 border-r border-black mr-2 mt-4"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-12 md:mx-0 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-0 mt-12">
         {socialMedia.map((social) => (
           <div key={social.id} className="w-full">
             <PinContainer title={social.name} href={social.link}>
