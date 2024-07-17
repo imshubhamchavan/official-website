@@ -65,8 +65,8 @@ export function SocialMedia() {
                   <Image
                     src={social.icon}
                     alt={`${social.name} icon`}
-                    height={60}
-                    width={60}
+                    height={100}
+                    width={100}
                   />
                 </div>
                 <a href={social.link}>

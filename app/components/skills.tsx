@@ -165,25 +165,18 @@ export function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             <div>
               {" "}
-              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-8 pb-20 pt-8 ">
                 <IconCloud iconSlugs={slugs} />
               </div>
             </div>
 
             <div className="col-span-2">
               <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
-                {/* <FlipCard
-                  description="I am a full-stack developer with a passion for building beautiful and functional applications."
-                  image="https://images.unsplash.com/photo-1717966313670-a42f6908be92?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3"
-                  rotate="y"
-                  subtitle="Software Engineer"
-                  title="Languages & Markup"
-                /> */}
 
                 {/* Languages & Markup */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       Languages & Markup
                     </CardTitle>
                   </CardHeader>
@@ -203,9 +196,9 @@ export function Skills() {
                           alt={`${tech.name} Icon`}
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
-                        <span className="text-xs text-center block mt-1">
-                          {tech.name}
-                        </span>
+                        {/* <span className="text-xs text-center block mt-1">
+                         
+                        </span> */}
                       </div>
                     ))}
                   </CardContent>
@@ -214,7 +207,7 @@ export function Skills() {
                 {/* Frontend Frameworks & Libraries */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       Frameworks & Libraries
                     </CardTitle>
                   </CardHeader>
@@ -235,7 +228,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
@@ -245,7 +238,7 @@ export function Skills() {
                 {/* State Management */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       State Management
                     </CardTitle>
                   </CardHeader>
@@ -266,7 +259,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
@@ -276,7 +269,7 @@ export function Skills() {
                 {/* Styling */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       Styling
                     </CardTitle>
                   </CardHeader>
@@ -297,7 +290,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
@@ -308,7 +301,7 @@ export function Skills() {
 
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       {" "}
                       Backend & Databases{" "}
                     </CardTitle>
@@ -330,7 +323,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-10 md:h-10 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
@@ -340,7 +333,7 @@ export function Skills() {
                 {/* apisServices */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       {" "}
                       Api Services{" "}
                     </CardTitle>
@@ -362,7 +355,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
@@ -372,7 +365,7 @@ export function Skills() {
                 {/* testing */}
                 <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black font-normal cinzel-about mb-4">
+                    <CardTitle className="text-center text-2xl text-black font-extralight mb-4">
                       Testing
                     </CardTitle>
                   </CardHeader>
@@ -393,7 +386,7 @@ export function Skills() {
                           className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
-                          {tech.name}
+                         
                         </span>
                       </div>
                     ))}
