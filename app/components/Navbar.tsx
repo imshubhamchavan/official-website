@@ -99,7 +99,7 @@ export function Navbar() {
                 
                   {" "}
                   <span className="relative z-10 flex items-center mx-4 my-2">
-                    Contact <ArrowTopRightIcon className="ml-2" />
+                    Contact <div className="bg-black border-2px border rounded-full justify-center items-center ml-3"><ArrowTopRightIcon className="m-1 text-white font-bold" /></div>
                   </span>
                 
               </span>

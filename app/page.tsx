@@ -12,7 +12,7 @@ import { SocialMedia } from "./components/SocialMedia";
 
 export default function Home() {
   return (
-    <div>
+    <div >
         <Hero />
         <Skills/>
         <div className="w-full bg-black">

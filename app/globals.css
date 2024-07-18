@@ -50,7 +50,7 @@
   .text-stroke {
     -webkit-text-stroke: 1.2px #000;
     color: transparent;
-    font-weight: 500;
+    font-weight: 200;
   }
 }
 
@@ -70,6 +70,7 @@
   font-optical-sizing: auto;
   font-weight: 500; /* Regular weight */
   font-style: normal;
+  letter-spacing: 0.1;
 }
 
 .ribes-bold {

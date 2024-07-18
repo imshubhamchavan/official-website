@@ -163,9 +163,9 @@ export function Skills() {
         {/* Skills sections */}
         <div className="mt-8 md:mt-4 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-            <div>
+            <div className="m-4">
               {" "}
-              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-lg bg-background px-12 pb-20 pt-8 ">
+              <div className="col-span-1 h-full w-full flex items-center justify-center bg-yellow-50 overflow-hidden rounded-2xl bg-background px-12 pb-20 pt-8 ">
                 <IconCloud iconSlugs={slugs} />
               </div>
             </div>

@@ -71,17 +71,12 @@ export default function About() {
         <title>About|Shubham Chavan</title>
 
         {/* hero section */}
-        <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
-          <h1 className="ribes-mono mt-24 px-8 mb-6 flex items-center justify-center space-x-2">
-            GOOD THINGS{" "}
-            <Image
-              src={logo}
-              alt="Icon"
-              className="icons hidden sm:inline w-16 h-16 md:w-20 md:h-20 group-hover:scale-110"
-            />
-            HAPPEN
-          </h1>
-          <p className="font-semibold mb-6">WHEN YOU SAY</p>
+        <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-10xl">
+          <h1 className="ribes-mono mt-24 px-4 flex items-center justify-center space-x-2">
+            GOOD THINGS
+          </h1>{" "}
+          <span className=" text-purple-400 font-bold">HAPPEN</span>
+          <p className="ribes-bold mb-6">WHEN YOU SAY</p>
           <HelloText />
         </div>
 
@@ -92,8 +87,6 @@ export default function About() {
             About
           </h1>
           <div className="h-28 sm:h-48 border-r border-black mt-4"></div>
-
-          
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-14">
             <Image
@@ -183,9 +176,12 @@ export default function About() {
       {/* <div className="w-full">
             <StickyScroll content={content} />
           </div> */}
-      <div className="w-full bg-black">
+      <div className="w-full bg-black mb-32">
         <Experience />
         <Certificates />
+      </div>
+      <div className="bg-black text-white h-screen ribes-mono text-center  flex items-center ">
+        <h1 className="text-6xl md:text-14xl">Shubham</h1>
       </div>
     </div>
   );

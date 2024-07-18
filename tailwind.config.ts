@@ -44,6 +44,8 @@ const config = {
         '10xl': '8rem',
         '11xl': '9rem',
         '12xl': '10rem',
+        '13xl': '11rem',
+        '14xl': '22rem',
       },
       
       grayscale: {
