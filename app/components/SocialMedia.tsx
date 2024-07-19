@@ -59,19 +59,19 @@ export function SocialMedia() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mx-0 mt-12">
         {socialMedia.map((social) => (
           <div key={social.id} className="w-full">
-            <PinContainer title={social.name} href={social.link}>
+            <PinContainer title={social.link} href={social.link}>
               <div className="flex flex-col p-4 tracking-tight text-black sm:flex-row sm:basis-1/2  w-[16rem] h-[16rem]">
                 <div className="flex flex-col mr-4">
-                  <Image
+                  {/* <Image
                     src={social.icon}
                     alt={`${social.name} icon`}
                     height={120}
                     width={120}
-                  />
+                  /> */}
                 </div>
                 <a href={social.link}>
                 <div className="flex-1">
-                  <h1 className=" text-xl ribes-bold text-black">
+                  <h1 className=" text-xl font-semibold text-black">
                     {social.name}
                   </h1>
                   <h2 className="font-light ribes-mono text-gray-500">

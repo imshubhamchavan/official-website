@@ -297,17 +297,17 @@ export function Skills() {
                   </CardContent>
                 </Card>
 
-                {/* backendDatabases  */}
-
-                <Card className="col-span-2 lg:col-span-2 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                
+                 {/* apisServices */}
+                 <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
-                      Backend & Databases{" "}
+                      Api Services{" "}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                    {backendDatabases.map((tech, index) => (
+                    {apisServices.map((tech, index) => (
                       <div
                         key={index}
                         ref={(el) => {
@@ -330,16 +330,17 @@ export function Skills() {
                   </CardContent>
                 </Card>
 
-                {/* apisServices */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                {/* backendDatabases  */}
+
+                <Card className="col-span-2 lg:col-span-2 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
-                      Api Services{" "}
+                      Backend & Databases{" "}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                    {apisServices.map((tech, index) => (
+                    {backendDatabases.map((tech, index) => (
                       <div
                         key={index}
                         ref={(el) => {

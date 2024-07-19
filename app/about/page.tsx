@@ -13,43 +13,6 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { HelloText } from "../components/HelloText";
 
-// sticky scroll reveal data
-
-const content = [
-  {
-    title: "Basic Information -",
-    description:
-      "Shubham Chavan is a dedicated and innovative web developer based in India 🇮🇳. He specializes in crafting sophisticated web applications using Next.js and React.js, focusing on creating seamless user experiences and efficient, scalable codebases. His expertise spans front-end development, component-based architecture, and performance optimization, ensuring high-quality web solutions.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src={myimg}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Journey Starts-",
-    description:
-      "Shubham Chavan embarked on his journey by earning a Bachelor's Degree in Computer Science from the University of Amravati, graduating in 2019 with a strong foundation in programming and software development. During his undergraduate studies, he honed his skills in coding and discovered a passion for creating impactful software solutions. This educational background equipped him with the knowledge and expertise to excel in web development, particularly in leveraging technologies like Next.js and React.js to build sophisticated and user-centric applications.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src={aboutimg}
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-];
-
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function About() {

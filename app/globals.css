@@ -63,6 +63,12 @@
   font-display: swap;
 }
 
+.quartz-font {
+  font-family: 'QUARTZO', sans-serif; /* Include fallback font */
+  font-weight: bold; /* Matches the font-weight in @font-face */
+  font-style: normal; /* Matches the font-style in @font-face */
+}
+
 
 @font-face {
   font-family: 'Ribes';
@@ -74,7 +80,6 @@
        url('/public/fonts/Ribes-Light.woff') format('woff');
   
 }
-
 
 .ribes {
   font-family: "Ribes", sans-serif;
