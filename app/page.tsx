@@ -18,7 +18,7 @@ export default function Home() {
         <div className="w-full bg-black">
           <FavoriteProjects />
         </div>
-        <SocialMedia/>
+        {/* <SocialMedia/> */}
     </div>
   );
 }

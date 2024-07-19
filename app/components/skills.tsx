@@ -146,7 +146,7 @@ export function Skills() {
     <section className="">
       <div className="panel align-top font-thin about mt-12">
         <div className="about-content flex space-x-2 md:space-x-8 flex-col">
-          <h1 className="text-5xl lg:text-10xl ribes text-center">
+          <h1 className="text-5xl md:text-8xl lg:text-10xl ribes text-center">
             Skills and Technologies
           </h1>
           <div className="mt-4 mb-12 text-1xl lg:text-2xl font-extralight text-center">
@@ -162,7 +162,7 @@ export function Skills() {
 
         {/* Skills sections */}
         <div className="mt-8 md:mt-4 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
             <div className="m-1">
               {" "}
               <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-2xl bg-background px-12 pb-2 pt-8 ">
@@ -297,7 +297,7 @@ export function Skills() {
                   </CardContent>
                 </Card>
 
-                
+
                  {/* apisServices */}
                  <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
