@@ -53,6 +53,16 @@
     font-weight: 200;
   }
 }
+@font-face {
+  font-family: 'QUARTZO';
+  src: url('/public/fonts/QUARTZOdemo-Bold.woff2') format('woff2'),
+      url('/public/fonts/QUARTZOdemo-Bold.woff') format('woff'),
+      url('/public/fonts/QUARTZOdemo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'Ribes';
@@ -65,6 +75,7 @@
   
 }
 
+
 .ribes {
   font-family: "Ribes", sans-serif;
   font-optical-sizing: auto;
@@ -72,12 +83,18 @@
   font-style: normal;
   letter-spacing: 0.1;
 }
+@media (max-width: 768px) {
+  .ribes {
+    font-weight: 300; /* Lighter weight */
+  }
+}
 
 .ribes-bold {
   font-family: "Ribes", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800; /* Regular weight */
-  font-style: bold;
+   /* Regular weight */
+  font-style: normal;
+  font-weight: 700;
 }
 .ribes-mono {
   font-family: "ribes", sans-serif;

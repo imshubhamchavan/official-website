@@ -71,11 +71,10 @@ export default function About() {
         <title>About|Shubham Chavan</title>
 
         {/* hero section */}
-        <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-10xl">
-          <h1 className="ribes-mono mt-24 px-4 flex items-center justify-center space-x-2">
-            GOOD THINGS
+        <div className="flex flex-col items-center mb-12 text-center text-4xl md:text-6xl lg:text-8xl">
+          <h1 className="ribes-mono mt-24 flex items-center justify-center ">
+            GOOD THINGS HAPPEN
           </h1>{" "}
-          <span className=" text-purple-400 font-bold">HAPPEN</span>
           <p className="ribes-bold mb-6">WHEN YOU SAY</p>
           <HelloText />
         </div>

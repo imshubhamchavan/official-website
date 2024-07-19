@@ -163,9 +163,9 @@ export function Skills() {
         {/* Skills sections */}
         <div className="mt-8 md:mt-4 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-            <div className="m-4">
+            <div className="m-1">
               {" "}
-              <div className="col-span-1 h-full w-full flex items-center justify-center bg-yellow-50 overflow-hidden rounded-2xl bg-background px-12 pb-20 pt-8 ">
+              <div className="col-span-1 h-full w-full flex items-center justify-center overflow-hidden rounded-2xl bg-background px-12 pb-2 pt-8 ">
                 <IconCloud iconSlugs={slugs} />
               </div>
             </div>
@@ -174,7 +174,7 @@ export function Skills() {
               <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
 
                 {/* Languages & Markup */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl ribes-mono text-black  mb-4">
                       Languages & Markup
@@ -205,7 +205,7 @@ export function Skills() {
                 </Card>
 
                 {/* Frontend Frameworks & Libraries */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Frameworks & Libraries
@@ -236,7 +236,7 @@ export function Skills() {
                 </Card>
 
                 {/* State Management */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       State Management
@@ -267,7 +267,7 @@ export function Skills() {
                 </Card>
 
                 {/* Styling */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Styling
@@ -299,7 +299,7 @@ export function Skills() {
 
                 {/* backendDatabases  */}
 
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-2 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
@@ -320,7 +320,7 @@ export function Skills() {
                         <Image
                           src={tech.icon}
                           alt={`${tech.name} Icon`}
-                          className="w-12 h-12 md:w-10 md:h-10 group-hover:scale-110"
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
                         />
                         <span className="text-xs text-center block mt-1">
                          
@@ -331,7 +331,7 @@ export function Skills() {
                 </Card>
 
                 {/* apisServices */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       {" "}
@@ -363,7 +363,7 @@ export function Skills() {
                 </Card>
 
                 {/* testing */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 md:p-8 bg-transparent mt-8">
+                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Testing

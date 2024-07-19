@@ -25,7 +25,7 @@ export function HelloText() {
 
   return (
     <div>
-      <p className="text-orange-400 text-3xl font-extrabold karla lg:text-7xl">
+      <p className="text-orange-300 text-3xl font-extrabold karla lg:text-7xl">
         “ {text} ”
       </p>
     </div>
