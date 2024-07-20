@@ -99,7 +99,6 @@ const languagesMarkup = [
 const frontendFrameworks = [
   { name: "React.js", icon: reactIcon },
   { name: "Next.js", icon: nextjsIcon },
-  { name: "Angular", icon: angularIcon },
 ];
 
 const stateManagement = [{ name: "Redux", icon: reduxIcon }];
@@ -146,7 +145,7 @@ export function Skills() {
     <section className="">
       <div className="panel align-top font-thin about mt-12">
         <div className="about-content flex space-x-2 md:space-x-8 flex-col">
-          <h1 className="text-5xl md:text-8xl lg:text-10xl ribes text-center">
+          <h1 className="text-5xl md:text-8xl lg:text-10xl ribes text-gray-700 text-center">
             Skills and Technologies
           </h1>
           <div className="mt-4 mb-12 text-1xl lg:text-2xl font-extralight text-center">
@@ -171,10 +170,10 @@ export function Skills() {
             </div>
 
             <div className="col-span-2">
-              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
 
                 {/* Languages & Markup */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                <Card className="col-span-2 lg:col-span-2 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl ribes-mono text-black  mb-4">
                       Languages & Markup
@@ -204,8 +203,72 @@ export function Skills() {
                   </CardContent>
                 </Card>
 
-                {/* Frontend Frameworks & Libraries */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                 {/* State Management */}
+                 <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
+                      State Management
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {stateManagement.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                         
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>              
+
+                
+                 {/* apisServices */}
+                 {/* <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                  <CardHeader>
+                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
+                      {" "}
+                      Api Services{" "}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
+                    {apisServices.map((tech, index) => (
+                      <div
+                        key={index}
+                        ref={(el) => {
+                          if (el) {
+                            iconsRef.current[index] = el;
+                          }
+                        }}
+                        className="group relative icons"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} Icon`}
+                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
+                        />
+                        <span className="text-xs text-center block mt-1">
+                         
+                        </span>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card> */}
+
+                 {/* Frontend Frameworks & Libraries */}
+                 <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Frameworks & Libraries
@@ -235,39 +298,8 @@ export function Skills() {
                   </CardContent>
                 </Card>
 
-                {/* State Management */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
-                  <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
-                      State Management
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                    {stateManagement.map((tech, index) => (
-                      <div
-                        key={index}
-                        ref={(el) => {
-                          if (el) {
-                            iconsRef.current[index] = el;
-                          }
-                        }}
-                        className="group relative icons"
-                      >
-                        <Image
-                          src={tech.icon}
-                          alt={`${tech.name} Icon`}
-                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
-                        />
-                        <span className="text-xs text-center block mt-1">
-                         
-                        </span>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-
-                {/* Styling */}
-                <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
+                 {/* Styling */}
+                 <Card className="col-span-2 lg:col-span-2 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
                   <CardHeader>
                     <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
                       Styling
@@ -298,37 +330,6 @@ export function Skills() {
                 </Card>
 
 
-                 {/* apisServices */}
-                 <Card className="col-span-2 lg:col-span-1 border-none p-4 m-1 md:p-8 bg-yellow-50 ">
-                  <CardHeader>
-                    <CardTitle className="text-center text-2xl text-black ribes-mono mb-4">
-                      {" "}
-                      Api Services{" "}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-                    {apisServices.map((tech, index) => (
-                      <div
-                        key={index}
-                        ref={(el) => {
-                          if (el) {
-                            iconsRef.current[index] = el;
-                          }
-                        }}
-                        className="group relative icons"
-                      >
-                        <Image
-                          src={tech.icon}
-                          alt={`${tech.name} Icon`}
-                          className="w-12 h-12 md:w-12 md:h-12 group-hover:scale-110"
-                        />
-                        <span className="text-xs text-center block mt-1">
-                         
-                        </span>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
 
                 {/* backendDatabases  */}
 

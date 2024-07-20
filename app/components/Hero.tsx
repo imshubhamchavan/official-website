@@ -25,9 +25,9 @@ const words = [
 
 export function Hero() {
   return (
-    <div className="lg:mt-12 sm:mt-2 text-center">
+    <div className="mt-12 text-center">
       <HeroHighlight className="">
-        <div className="animate-slide-in md:ml-24 sm:text-center md:text-left">
+        <div className="animate-slide-in md:ml-24 sm:text-center md:text-left ">
           <FlipWords words={words} />
         </div>
         <motion.h1
@@ -72,12 +72,13 @@ export function Hero() {
           </div>
         </motion.h1>
       </HeroHighlight>
-      <div className="max-w-7xl w-full content-end lg:mt-32 sm:mt-2 ">
-        <h1 className="text-right font-thin text-4xl md:text-4xl font-small ribes-mono lg:text-5xl mr-8">
+        <div className="max-w-7xl w-full content-end lg:mt-12 sm:mt-2 ">
+        <h1 className="text-right font-thin text-4xl md:text-4xl font-small ribes-mono lg:text-5xl mr-4">
           Scroll
         </h1>
         <div className="h-28 sm:h-48 border-r border-black mt-4 mr-8"></div>
       </div>
+     
       <div></div>
     </div>
   );

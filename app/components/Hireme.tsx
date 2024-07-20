@@ -32,7 +32,7 @@ export default function Hireme() {
            className="p-4 hover:bg-black hover:text-white bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
          >
             
-            <span className="relative z-10">
+            <span className="relative ribes z-10">
               GET IN TOUCH
             </span>
             </Button></a>
