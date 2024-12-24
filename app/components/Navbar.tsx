@@ -36,10 +36,6 @@ export const navigationItems = [
     icon: HomeIcon,
   },
   {
-    name: "Guestbook",
-    href: "/guestbook",
-  },
-  {
     name: "Projects",
     href: "/projects",
   },
