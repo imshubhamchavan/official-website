@@ -15,7 +15,7 @@ export default function Experience() {
           <h1 className="text-2xl sm:text-2xl lg:text-3xl text-gray-50 font-bold rubik">
             1. Front-End Developer
           </h1>
-          <h3 className="text-muted-foreground mb-6 ml-8">xyz Company</h3>
+          <h3 className="text-muted-foreground mb-6 ml-8">Softfeat technologies</h3>
           <ul className="list-disc list-inside mt-4 text-lg noto-sans text-gray-300">
             <li>
               Developed and maintained web applications with React.js and
